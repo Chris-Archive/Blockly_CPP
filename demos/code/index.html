@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <title>Blockly C++ Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../../blockly_compressed.js"></script>
+  <script src="../../blocks_compressed.js"></script>
+  <script src="../../c_compressed.js"></script>
+  
+  <script src="code.js"></script>
+  
+  <script src="js/Logic.js"></script>
+  <script src="js/Include.js"></script>
+  <script src="js/Scopes.js"></script>
+  
+  <script src="Blocks/FileSaver.js" ></script>
+  <script src="Blocks/filereader.js" ></script>
+  <script src="Blocks/Changelog.js" ></script>
+  <script src="Blocks/Core.js" ></script>
+  <script src="Blocks/Chapter 1 - Variables.js" ></script>
+  
+  <!-- Include block type inputs -->
+  <script src="Blocks/Blocks - Type.js" ></script>
+  
+  
+  
+</head>
+<body>
+  <table width="100%" height="100%">
+    <tr>
+      <td>
+        <h1>
+          <span id="title"></span>
+		  <!--<span id = "version">Beta 1.7</span>-->
+        </h1>
+		
+		<p align="left">	
+			<button onclick="downloadCode()">Download C++ Code</button>
+			<!-- button onclick="updateLog(this)">Download C++</button -->
+		</p>
+		
+		<p align="left">	
+			<button onclick = "downloadXML()" title = "Save your work.">Save</button>
+			
+			<input type = "file" onchange = "readFile(this)" title = "Load a blockly save into the program."></input>
+		</p>
+		
+      </td>
+      <td class="farSide">
+        <select id="languageMenu"></select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <table width="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon">...</td>
+            <td id="tab_c" class="taboff">C++</td> <!--Added C++ to the tab-->
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_xml" class="taboff"></td>
+            <td class="tabmin">&nbsp;</td>
+
+
+            <td class="tabmax">
+              <button id="trashButton" class="notext" title="...">
+                <img src='../../media/1x1.gif' class="trash icon21">
+              </button>
+              <button id="linkButton" class="notext" title="...">
+                <img src='../../media/1x1.gif' class="link icon21">
+              </button>
+              <button id="runButton" class="notext primary" title="...">
+                <img src='../../media/1x1.gif' class="run icon21">
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+		<!-- change percentage occupied by the cells -->
+      <td height="99%" width = "80%" colspan=1 id="content_area"></td>
+      <td height="99%" width = "20%" colspan=1 id="code_area">
+	  </td>
+	  
+    </tr>
+  </table>
+  <div id="content_blocks" class="content"></div>
+  <pre id="content_c" class="content prettyprint lang-c"></pre>
+  <!-- use c_text element to store c code on the tab_blocks -->
+  <pre id = "c_text" class = "content prettyprint lang-c"></pre>
+  <textarea id="content_xml" class="content" wrap="off"></textarea>
+
+  <!-- re-categorize the blocks -->
+ 
+  <xml xmlns="" id="toolbox" style="display: none">
+	
+    <category name="Main Function" colour="#134796">
+	
+	
+	</category>
+	
+	<category name="Variables" colour="#134796" >
+		<!--
+			<label text="Variable Declaration" web-class="labelVariable"></label>
+			
+			<block type = "variable_declare"></block>
+		-->
+		
+		</category>
+
+</xml> <!-- toolbox -->
+
+
+  <!-- <textarea id="content_xml" class="content" wrap="off"></textarea> -->
+</body>
+
+
+
+</html>
+
+
+
+
+<!-- Label Color Categories -->
+<style>
+.labelExamples>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #4DAF63;
+}
+.labelVariable>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #A55B80;
+}
+.labelCout>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #A57A5B;
+}
+.labelCin>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #A5995B;
+}
+.labelString>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5BA58C;
+}
+.labelMath>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5B67A5;
+}
+.labelLogic>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5B80A5;
+}
+.labelCCType>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5BA59F;
+}
+.labelSwitch>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #A5A55B;
+}
+.labelLoops>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5BA56D;
+}
+.labelFunction>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #80A55B;
+}
+.labelArray>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5BA5A5;
+}
+.labelVector>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #5B93A5;
+}
+
+.labelChapter1>.blocklyFlyoutLabelText {
+	font-style: bold;
+	fill: #4DAF63;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+

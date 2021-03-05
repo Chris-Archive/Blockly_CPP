@@ -1,0 +1,11 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="vector" id="e|B^iEt5g![}KlmT*$y^" x="138" y="188">
+    <field name="myVecType">myVecTypeInt</field>
+    <field name="myVecDef">myVec</field>
+    <next>
+      <block type="vector_pushback" id="?Eg+6M[G5CauBvizMfGk">
+        <field name="myVecDef">MYVEC</field>
+      </block>
+    </next>
+  </block>
+</xml>
