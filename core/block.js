@@ -196,12 +196,22 @@ Blockly.Block = function(workspace, prototypeName, opt_id) {
   this.isConst_ = false;
 
   /**
-   * A boolean representing if the block is a getter
+   * A boolean representing if the block is
+   * an lvalue
    * 
    * @type {bool|Blockly.Block.bool}
-   * @current July 2020
+   * @current March 2021
    */
-  this.isGetter_ = false;
+  this.isLValue_ = false;
+  
+  /**
+   * A boolean representing if the block is
+   * an rvalue
+   * 
+   * @type {bool|Blockly.Block.bool}
+   * @current March 2021
+   */
+  this.isRValue_ = false;
   
 	/**
 	 * A string representing the type of a variable

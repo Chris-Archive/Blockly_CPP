@@ -21,7 +21,7 @@ Blockly.C["main"] = function(){
 
 	code += s_input;
 
-	code += "}";
+	code += "}\n";
 
 	return code;
 };

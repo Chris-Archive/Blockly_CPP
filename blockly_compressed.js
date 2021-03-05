@@ -8478,7 +8478,9 @@ Blockly.Block = function(a, b, c) {
 
 	this.isConst_ = false;
 	
-	this.isGetter_ = false;
+	this.isLValue_ = false;
+	
+	this.isRValue_ = false;
 	
 	this.value_ = "";
 
