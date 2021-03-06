@@ -7,7 +7,6 @@ Blockly.Blocks["main"] = {
 
 		this.appendStatementInput("statement");
 
-
 		this.setPreviousStatement(true);
 		this.setNextStatement(true);
 	}
@@ -18,9 +17,7 @@ Blockly.C["main"] = function(){
 	var code = "";
 	
 	code += "int main(){\n";
-
 	code += s_input;
-
 	code += "}\n";
 
 	return code;

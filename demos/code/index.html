@@ -15,15 +15,16 @@
   <script src="js/Logic.js"></script>
   <script src="js/Include.js"></script>
   <script src="js/Scopes.js"></script>
+  <script src="js/Properties.js"></script>
   
   <script src="Blocks/FileSaver.js" ></script>
   <script src="Blocks/filereader.js" ></script>
   <script src="Blocks/Changelog.js" ></script>
   <script src="Blocks/Core.js" ></script>
   <script src="Blocks/Chapter 1 - Variables.js" ></script>
-  
-  <!-- Include block type inputs -->
-  <script src="Blocks/Blocks - Type.js" ></script>
+  <script src="Blocks/Variable Getters.js"></script>
+  <script src="Blocks/iostream.js"></script>
+  <script src="Blocks/Include Directories.js"></script>
   
   
   
@@ -97,20 +98,39 @@
  
   <xml xmlns="" id="toolbox" style="display: none">
 	
+	<category name = "Include Directories" colour = "#000000">
+		<block type = "library_iostream"></block>
+	</category>
+
 	<category name="Main Function" colour="#134796">
     
 		<block type = "main"></block>
     
 	</category>
+
+	<category name = "Getters" colour = "#000000">
+
+
+	<label text = "Variable Getters" web-class = "labelVariable"></label>
+
+	<block type = "variable_getter"></block>
+
+	</category>
 	
 	<category name="Variables" colour="#134796" >
-		<!--
-			<label text="Variable Declaration" web-class="labelVariable"></label>
+		<label text = "Variable Declaration" web-class="labelVariable"></label>
 			
-			<block type = "variable_declare"></block>
-		-->
+		<block type = "declare_variable"></block>
 		
+	</category>
+
+	<category name = "iostream" colour = "#000000">
+
+		<category name = "output" colour = "#000000">
+			<block type = "io_printf"></block>
 		</category>
+
+	</category>
 
 </xml> <!-- toolbox -->
 
