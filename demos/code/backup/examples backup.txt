@@ -1,0 +1,3261 @@
+	
+	<category name="Examples Chapter 1" colour="#A55B80">
+	
+		<category name="Variable Examples" colour="#A55B80">
+	
+	
+		<label text="Variable Declaration and Initialization" web-class="labelVariable"></label>
+			
+			<block type="include_iostream" id="=KZtSolonvvST;;rNpY.">
+			<next>
+				<block type="using_namespace_std" id="*P9TU^hqr1JDP*8ZpXOP">
+				<next>
+					<block type="main" id="O00MRNz#:)::XYkge:-p">
+					<statement name="NAME">
+						<block type="comment_single" id="1NOWb[oOo;5e{1xt:%?+">
+						<field name="input">declare double temp and initialize it with (double type) 5.25</field>
+						<next>
+							<block type="variable_declare" id="HK/L)rwZf%?0CwT,q~kH">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+							<value name="NAME">
+								<block type="var_initialization" id="72ps$OKNgkzgRYrl{7rx">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="text1">5.25</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id=":JXWoxz[lx/djGJ1K%)*">
+								<field name="input">output temp</field>
+								<next>
+									<block type="output_cout" id="1`1CK[f=rDNZzH5KIACX">
+									<value name="NAME">
+										<block type="variables_get" id="Q$JRpq))JchWzLb#ac2T">
+										<field name="VAR" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+		
+		<label text="Variable Compound Assignment" web-class="labelVariable"></label>
+		
+			<block type="include_iostream" id="|*s^,x%$QgbTJiEp{Qlz">
+			<next>
+				<block type="using_namespace_std" id="eab5.4yeYId=ym#OjE9:">
+				<next>
+					<block type="main" id="n=LjE:Na_,(]h_kF]RV|">
+					<statement name="NAME">
+						<block type="comment_single" id="eR)k9u}i99!osR.u~DnU">
+						<field name="input">declare double temp and initialize it with (double type) 5.25</field>
+						<next>
+							<block type="variable_declare" id="1?2y|]{J-1=%s,:XlpNO">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+							<value name="NAME">
+								<block type="var_initialization" id="8srP%fAnTA);D?0=;GvW">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="text1">5.25</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="BUJ2e|PzG_`hwyqOrT_e">
+								<field name="input">outout temp</field>
+								<next>
+									<block type="output_cout" id="pauitMV#uW#CGGB=zB}H">
+									<value name="NAME">
+										<block type="variables_get" id="rn|`E~`$q0/ZHowh_0|j">
+										<field name="VAR" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="Vum6lBvq3E}yDEi,NWH;">
+										<field name="input">add temp by (double type) 4.25</field>
+										<next>
+											<block type="var_change" id="=!3{_Wvzz{SDx!Ef8/zv">
+											<field name="myVarDef" id="G.TgSONZ,4d=y-1yhhu%">myVar</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="H}sTgxJp6X-GESQyZa(p">
+												<field name="NUM">1</field>
+												</shadow>
+												<block type="var_initialization" id="c}s^,.A}q4%7s}lCoj6f">
+												<field name="myVarType">myVarTypeDouble</field>
+												<field name="text1">4.25</field>
+												</block>
+											</value>
+											<next>
+												<block type="comment_single" id="4p,JiwqSXzTI!,nM@IC=">
+												<field name="input">outout temp</field>
+												<next>
+													<block type="output_cout" id="heYtphg}=|Nd*l(S*$|b">
+													<value name="NAME">
+														<block type="variables_get" id="p{CvBmAyF]5CiZ|kYi={">
+														<field name="VAR" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		<label text="Variable Reinitialization" web-class="labelVariable"></label>
+		
+			<block type="include_iostream" id="|*s^,x%$QgbTJiEp{Qlz">
+			<next>
+				<block type="using_namespace_std" id="eab5.4yeYId=ym#OjE9:">
+				<next>
+					<block type="main" id="n=LjE:Na_,(]h_kF]RV|">
+					<statement name="NAME">
+						<block type="comment_single" id="eR)k9u}i99!osR.u~DnU">
+						<field name="input">declare double temp and initialize it with (double type) 5.25</field>
+						<next>
+							<block type="variable_declare" id="1?2y|]{J-1=%s,:XlpNO">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+							<value name="NAME">
+								<block type="var_initialization" id="8srP%fAnTA);D?0=;GvW">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="text1">5.25</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="BUJ2e|PzG_`hwyqOrT_e">
+								<field name="input">outout temp</field>
+								<next>
+									<block type="output_cout" id="pauitMV#uW#CGGB=zB}H">
+									<value name="NAME">
+										<block type="variables_get" id="rn|`E~`$q0/ZHowh_0|j">
+										<field name="VAR" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="Vum6lBvq3E}yDEi,NWH;">
+										<field name="input">reinitialize temp to (double type) 2.75</field>
+										<next>
+											<block type="var_reinit" id="_ul$F%7!zvRNh5~JYjrv">
+											<field name="myVarDef" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="r9,Dc/kTl3;mssv[ySpz">
+												<field name="NUM">0</field>
+												</shadow>
+												<block type="var_initialization" id="aA%[l*s}J]_`!la+@5Ck">
+												<field name="myVarType">myVarTypeDouble</field>
+												<field name="text1">2.75</field>
+												</block>
+											</value>
+											<next>
+												<block type="comment_single" id="4p,JiwqSXzTI!,nM@IC=">
+												<field name="input">outout temp</field>
+												<next>
+													<block type="output_cout" id="heYtphg}=|Nd*l(S*$|b">
+													<value name="NAME">
+														<block type="variables_get" id="p{CvBmAyF]5CiZ|kYi={">
+														<field name="VAR" id="0`^X)dj/w7FFiMMQfe/I">temp</field>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		
+		</category>
+		
+		
+		<category name="String and Output Examples" colour="#A57A5B">
+		
+		<label text="Cout Stream" web-class="labelCout"></label>
+			
+			<block type="include_iostream" id="U8x*%vC=eM4(aV^_z[c6">
+			<next>
+				<block type="using_namespace_std" id=";J!nh_`_G+0wF1+,R+IK">
+				<next>
+					<block type="main" id="Q.((JXIR#ofCSKn{t17X">
+					<statement name="NAME">
+						<block type="comment_single" id="d$u}7*1O%tD,*|1GcUpT">
+						<field name="input">declare and initialize myVar</field>
+						<next>
+							<block type="variable_declare" id="zLa88s#kjPKXIaR67H]R">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="myVarDec" id="4uL%L.)W=`^T0L%9%ZbR">myVar</field>
+							<value name="NAME">
+								<block type="var_initialization" id="1^FHQM+2@zt5C$p6EZe+">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">12</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="Rr#?P-.I*tci}wr#k^g$">
+								<field name="input">output myVar</field>
+								<next>
+									<block type="output_cout" id=",Ne@}@bn7(}xvmwzotxA">
+									<value name="NAME">
+										<block type="cout_output" id="^`$Kj-IO;G7IT_trBO:#">
+										<field name="inp">myVar has a value of </field>
+										<value name="NAME">
+											<block type="cout_var" id=".p+E1NWi{xQ92wd^}U%0">
+											<field name="varDef" id="4uL%L.)W=`^T0L%9%ZbR">myVar</field>
+											<value name="valinp1">
+												<block type="cout_output" id=";c,M-v0%:`F$~S+H|@G*">
+												<field name="inp">!</field>
+												<value name="NAME">
+													<block type="cout_endl" id=":+itr=3QaUhSYWO8a9Z9"/>
+												</value>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+			
+		<label text="Cin Stream" web-class="labelCin"></label>
+
+			<block type="include_iostream" id="=y|MMq`fMNn)JxQxN7Ps">
+			<next>
+				<block type="using_namespace_std" id="6Le.Ey0X=k#O}_/v6y{%">
+				<next>
+					<block type="main" id="0hI{X8Y9^uHj?#;Dj~ka">
+					<statement name="NAME">
+						<block type="comment_single" id="ShD~@52.$P=Q8rO75R~O">
+						<field name="input">declare 3 integer variables</field>
+						<next>
+							<block type="variable_declare" id="fCso=Q@F(+I.-%,9|gV3">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="myVarDec" id="QO+ZdKY1BwqE6w:=i08O">num1</field>
+							<next>
+								<block type="variable_declare" id="F^73~Jk;lrLCMjAbDTLa">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="myVarDec" id="`5jvKc[;y,2G}QNEsRT8">num2</field>
+								<next>
+									<block type="variable_declare" id="4@d$2/GKMnlp9p{b!6wV">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="myVarDec" id="FKpculG3h+dy_W+~DS5y">num3</field>
+									<next>
+										<block type="comment_single" id=",iza62dA~P9EN|Tn).{,">
+										<field name="input">input three numbers using a cin stream</field>
+										<next>
+											<block type="cin_input" id="UI=xU~dd0Y`3S0SQ2Y-_">
+											<field name="myVarDef" id="QO+ZdKY1BwqE6w:=i08O">num1</field>
+											<value name="valinp1">
+												<block type="cin_parse" id="mB@lwa;kB4d|52MG*//+">
+												<field name="myVarDef" id="`5jvKc[;y,2G}QNEsRT8">num2</field>
+												<value name="valinp1">
+													<block type="cin_parse" id="c!em,YQKi+3`Z_0;(d6S">
+													<field name="myVarDef" id="FKpculG3h+dy_W+~DS5y">num3</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											<next>
+												<block type="comment_single" id="C!]PlV[4ZKd08c!jvFD~">
+												<field name="input">output the sum of all variables</field>
+												<next>
+													<block type="output_cout" id=")T(5k`L4a+NHGe=:j8G@">
+													<value name="NAME">
+														<block type="cout_output" id="!O6Sz7p=~7hzA;{Fpjio">
+														<field name="inp">The sum of all inputs is: </field>
+														<value name="NAME">
+															<block type="math_arith" id="Ir?i!X)HTt-k)vn$lKcS">
+															<field name="arith_op">math_add</field>
+															<field name="math_parenth">parenthNo</field>
+															<value name="valinp1">
+																<shadow xmlns="" type="math_number">
+																<field name="NUM">1</field>
+																</shadow>
+																<block type="variables_get" id="deh=Ya`6lJ}sTnH!G#hn">
+																<field name="VAR" id="QO+ZdKY1BwqE6w:=i08O">num1</field>
+																</block>
+															</value>
+															<value name="valinp2">
+																<shadow xmlns="" type="math_number">
+																<field name="NUM">1</field>
+																</shadow>
+																<block type="math_arith" id="{f5ERgxHo)W$wGkf%`LR">
+																<field name="arith_op">math_add</field>
+																<field name="math_parenth">parenthNo</field>
+																<value name="valinp1">
+																	<shadow xmlns="" type="math_number">
+																	<field name="NUM">1</field>
+																	</shadow>
+																	<block type="variables_get" id="|W^b+4Ca@3^;q,2BcbOo">
+																	<field name="VAR" id="`5jvKc[;y,2G}QNEsRT8">num2</field>
+																	</block>
+																</value>
+																<value name="valinp2">
+																	<shadow xmlns="" type="math_number">
+																	<field name="NUM">1</field>
+																	</shadow>
+																	<block type="variables_get" id="V1G+tbE74_g!Iwx#aG(p">
+																	<field name="VAR" id="FKpculG3h+dy_W+~DS5y">num3</field>
+																	</block>
+																</value>
+																</block>
+															</value>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+		<label text="Getline" web-class="labelCin"></label>
+
+			<block type="include_iostream" id=")arX~H-HV2`yj?YvnD:*">
+			<next>
+				<block type="include_string" id="=$:furZ...llNNcZWNjD">
+				<next>
+					<block type="using_namespace_std" id="xbYt`9yrD2Az,oAytd(]">
+					<next>
+						<block type="main" id="(XdR(B1m{/[lphi0y[+s">
+						<statement name="NAME">
+							<block type="comment_single" id=")cR}8fw()HX-#v+Van$.">
+							<field name="input">declare name variable</field>
+							<next>
+								<block type="variable_declare" id="Y`{.qL.]!=DE;?xnah~c">
+								<field name="myVarType">myVarTypeString</field>
+								<field name="myVarDec" id="AIx9arP]Q{d+nzo3/u%8">name</field>
+								<next>
+									<block type="comment_single" id="#[}.ofrt)J(Q@H|Z^P(`">
+									<field name="input">user input into name (getline will *get* the entire *line* of input)</field>
+									<next>
+										<block type="comment_single" id="2;Sj12tg=j=o#!tYpD]l">
+										<field name="input">used for spaces such as first and last names</field>
+										<next>
+											<block type="cin_getline" id="}3(nld_C`bG:~Obip8Gz">
+											<field name="myVarDef" id="AIx9arP]Q{d+nzo3/u%8">name</field>
+											<next>
+												<block type="comment_single" id="~c#|`g1k%P@Nj1j$gN%z">
+												<field name="input">output name</field>
+												<next>
+													<block type="output_cout" id="NUAnaj{^w`{;EjNFUs7#">
+													<value name="NAME">
+														<block type="cout_var" id="IKj$peyG.e~#3DO`7/d2">
+														<field name="varDef" id="AIx9arP]Q{d+nzo3/u%8">name</field>
+														<value name="valinp1">
+															<block type="cout_endl" id=".5pIDnFz^`!FV_;T313U"/>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+			
+			
+		<label text="Output using printf" web-class="labelString"></label>
+		
+			<block type="include_iostream" id="y-*K(^Rz$Z35RM*/5nZU">
+			<next>
+				<block type="using_namespace_std" id="60ADG,M^s/*fh51_[r|I">
+				<next>
+					<block type="main" id="NwooF`UuF%;-[0BR]CRi">
+					<statement name="NAME">
+						<block type="comment_single" id="N5orz~1VJiPV}wa3aIS#">
+						<field name="input">output using printf</field>
+						<next>
+							<block type="printf" id="PUZa(d7p(0;*}a,L|7@,">
+							<field name="inp1">This is my printf output!</field>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+			
+		<label text="Convert numbers into a string" web-class="labelString"></label>
+		
+			<block type="include_iostream" id="##P47J$!8*bHy06vfyfW">
+			<next>
+				<block type="include_string" id="zdLc[I5}K/y-.GW/BQ,G">
+				<next>
+					<block type="using_namespace_std" id="LQ#OJ[[7OYH@x)I*O{3b">
+					<next>
+						<block type="main" id="ig6=*rNh*4MY(~Can@=s">
+						<statement name="NAME">
+							<block type="comment_single" id="`h`}$ivAKG!,vkqiNM!=">
+							<field name="input">myVar string</field>
+							<next>
+								<block type="variable_declare" id="rung{5bv}w*[v_r8HYw^">
+								<field name="myVarType">myVarTypeString</field>
+								<field name="myVarDec" id="4uL%L.)W=`^T0L%9%ZbR">myVar</field>
+								<next>
+									<block type="comment_single" id="-L4Mw=!w^saaY{@.4)VN">
+									<field name="input">convert integer 25671 into a string</field>
+									<next>
+										<block type="comment_single" id="U~}Q8p29E8[RZrO8P5N+">
+										<field name="input">set 25671 into myVar</field>
+										<next>
+											<block type="var_reinit" id="Kbn0]MQZ6?SiU-^u=7?S">
+											<field name="myVarDef" id="4uL%L.)W=`^T0L%9%ZbR">myVar</field>
+											<value name="valinp1">
+												<shadow xmlns="" type="math_number">
+												<field name="NUM">0</field>
+												</shadow>
+												<block type="to_string" id="]lU{46pH`Ax)@(~B53#B">
+												<value name="valinp1">
+													<shadow xmlns="" type="math_number">
+													<field name="NUM">0</field>
+													</shadow>
+													<block type="var_initialization" id="l`+CIJXI4~G%?b3QHq99">
+													<field name="myVarType">myVarTypeInt</field>
+													<field name="text1">25671</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											<next>
+												<block type="comment_single" id="+a05~nnEd/0!*=6,nNil">
+												<field name="input">output myVar (now a string)</field>
+												<next>
+													<block type="output_cout" id="wqvd_YG{TiJl,$ufT5!M">
+													<value name="NAME">
+														<block type="cout_var" id="r9pL,(5i,3I1xu=%(et:">
+														<field name="varDef" id="4uL%L.)W=`^T0L%9%ZbR">myVar</field>
+														<value name="valinp1">
+															<block type="cout_endl" id="sk0l8PRpY%805-~$-+D!"/>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+			
+			
+		<label text="Get the size of a string" web-class="labelString"></label>
+			
+			<block type="include_iostream" id="xcavI#W3HbK{+wHi8q6T">
+			<next>
+				<block type="include_string" id="EgiBP;I%(S}!k4cqJwS*">
+				<next>
+					<block type="using_namespace_std" id="Unye{8=7$zFa!?Jx`%=`">
+					<next>
+						<block type="main" id="n_Z_OaCN/jJpaL{J9}{?">
+						<statement name="NAME">
+							<block type="comment_single" id="#YYV+$`.Zu8z~TFuc7=x">
+							<field name="input">declare and initialize sentence</field>
+							<next>
+								<block type="variable_declare" id="/5Y=a8mn[]#-Iet~9cZY">
+								<field name="myVarType">myVarTypeString</field>
+								<field name="myVarDec" id="7YI8~{k^M0R!t.0oo~$a">sentence</field>
+								<value name="NAME">
+									<block type="var_initialization" id="goW%h2_$QeVT5E!Z_9Ie">
+									<field name="myVarType">myVarTypeString</field>
+									<field name="text1">This is a sentence that is being used as an example!</field>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="|w7UZNo}2.N!M!ai1it$">
+									<field name="input">outputs the number of characters in variable "sentence"</field>
+									<next>
+										<block type="output_cout" id="y_H%[tjhVw=MASYp|Z[*">
+										<value name="NAME">
+											<block type="cout_output" id="{J:lHd%Byo5ZtNnw:~?t">
+											<field name="inp">The size of this string is: </field>
+											<value name="NAME">
+												<block type="string_size" id=",nQsbk8!]@zqoX;@^gyB">
+												<value name="valinp1">
+													<block type="variables_get" id="Qjjs_F6{Gj0m|RB~{!O8">
+													<field name="VAR" id="7YI8~{k^M0R!t.0oo~$a">sentence</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+			
+		<label text="Concatenate a string" web-class="labelString"></label>
+			
+			<block type="include_iostream" id="qT;2;0v~Rs(B8jM]QW[`">
+			<next>
+				<block type="include_string" id="QpF{[]+RM@y~e@ai)0P{">
+				<next>
+					<block type="using_namespace_std" id="k/c5:8./i~rnIFloVpro">
+					<next>
+						<block type="main" id="N/=mND~IW1j.jf#@A)W`">
+						<statement name="NAME">
+							<block type="comment_single" id="8fUeZnx}E6%L!zSD7rD!">
+							<field name="input">Declare three variables, initialize the first two, and concatenate them into the third</field>
+							<next>
+								<block type="variable_declare" id="X,]z0blxGR}JiEi`zlK(">
+								<field name="myVarType">myVarTypeString</field>
+								<field name="myVarDec" id="HgSvS[`|@DCj,mhRwwzH">firstName</field>
+								<value name="NAME">
+									<block type="var_initialization" id="LMH#~nBIE]^YS1i*STMr">
+									<field name="myVarType">myVarTypeString</field>
+									<field name="text1">John</field>
+									</block>
+								</value>
+								<next>
+									<block type="variable_declare" id="GF`n-*e?iM3*_BhsSy}!">
+									<field name="myVarType">myVarTypeString</field>
+									<field name="myVarDec" id="+i1~x?T^d53Oi*:,1zIx">lastName</field>
+									<value name="NAME">
+										<block type="var_initialization" id="PPtcH|e~%(WL(H7jI;AW">
+										<field name="myVarType">myVarTypeString</field>
+										<field name="text1">Smith</field>
+										</block>
+									</value>
+									<next>
+										<block type="variable_declare" id="WuC0qsp={os;?`rOE$sj">
+										<field name="myVarType">myVarTypeString</field>
+										<field name="myVarDec" id=",.9~{NY]u%Ny0*4KR)h%">fullName</field>
+										<value name="NAME">
+											<block type="var_concatenate" id="8,nEykBlg#AFep4P3o/P">
+											<field name="varDef" id="HgSvS[`|@DCj,mhRwwzH">firstName</field>
+											<value name="valinp1">
+												<block type="string_concatenate" id="43o1)|n8tz7N!y-laeL2">
+												<field name="inp">, </field>
+												<value name="valinp1">
+													<block type="var_concatenate" id="#(J7T}Kzj_/1GgO,]lWJ">
+													<field name="varDef" id="+i1~x?T^d53Oi*:,1zIx">lastName</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</value>
+										<next>
+											<block type="comment_single" id="9EBN=sfPMVs]NXTcOR1d">
+											<field name="input">output fullName, which was concatenated</field>
+											<next>
+												<block type="output_cout" id="q;S:UI+M,NS1@=+xgzP4">
+												<value name="NAME">
+													<block type="cout_var" id="bo(l`8ii.Bs;/szo]Y42">
+													<field name="varDef" id=",.9~{NY]u%Ny0*4KR)h%">fullName</field>
+													<value name="valinp1">
+														<block type="cout_endl" id=",1r=e{rLzJ.?E6x5m4rA"/>
+													</value>
+													</block>
+												</value>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+			
+			
+		</category>
+	
+	</category>
+	
+	<category name="Examples Chapter 2" colour="#5B67A5">
+	
+		<label text="Arithmetic Operations" web-class="labelMath"></label>
+		
+			<block type="include_iostream" id="EnCktfEFG4JOpodNNLo8">
+			<next>
+				<block type="using_namespace_std" id="g6;F,KDL{8j8om2A~CiK">
+				<next>
+					<block type="main" id="R@{e)EQ_[,|an*Ew;A-#">
+					<statement name="NAME">
+						<block type="comment_single" id="NqKl,xo}{`(pK$R@0S6v">
+						<field name="input">declare num and initialize it using an equation (parentheses for order of operations))</field>
+						<next>
+							<block type="variable_declare" id="snBLby(~6kATm!wJu@?A">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="7FXXF-WOT440rb^Q=w(n">num</field>
+							<value name="NAME">
+								<block type="math_arith" id="88?GSEeoGsQ7GQa4wA18">
+								<field name="arith_op">math_mul</field>
+								<field name="math_parenth">parenthNo</field>
+								<value name="valinp1">
+									<shadow type="math_number" id="CTiVK%7+QI;u0K(((jFX">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="math_arith" id="CZf1)`$@ZfvUkje)aUE*">
+									<field name="arith_op">math_div</field>
+									<field name="math_parenth">parenthYes</field>
+									<value name="valinp1">
+										<shadow type="math_number" id="mTxO3Yyli1%^N4/Ki[`x">
+										<field name="NUM">4</field>
+										</shadow>
+										<block type="var_initialization" id="VPzh0R(`Td@#;m+TU-b?">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">4</field>
+										</block>
+									</value>
+									<value name="valinp2">
+										<shadow type="math_number" id="Cy_0BtK92Xgk2?bKrc$H">
+										<field name="NUM">8</field>
+										</shadow>
+										<block type="var_initialization" id="u@?pfFRstg!rz[?S::D(">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">8</field>
+										</block>
+									</value>
+									</block>
+								</value>
+								<value name="valinp2">
+									<shadow type="math_number" id="!0Sy-%Y%Ra2qT_zF^ZZK">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="math_arith" id="gEdLyHur_cm/yTEsSZf$">
+									<field name="arith_op">math_mul</field>
+									<field name="math_parenth">parenthYes</field>
+									<value name="valinp1">
+										<shadow type="math_number" id="gW?@?e$y.4t|:#]d$fKk">
+										<field name="NUM">12</field>
+										</shadow>
+										<block type="var_initialization" id="}6-Kx|rO#JFkgLVhnqUN">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">12</field>
+										</block>
+									</value>
+									<value name="valinp2">
+										<shadow type="math_number" id="LY,_R?um!DnJY^Eqs_U%">
+										<field name="NUM">16</field>
+										</shadow>
+										<block type="var_initialization" id="UjD#[)Cilg5xxoZJ7o{#">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">16</field>
+										</block>
+									</value>
+									</block>
+								</value>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="2JX=5vQG_E_Qr/TBT)a#">
+								<field name="input">output num</field>
+								<next>
+									<block type="output_cout" id=")Jt7G[J6_4b:|;rb+W1C">
+									<value name="NAME">
+										<block type="cout_var" id="^AT0cM(,H9OeEK~(1.r@">
+										<field name="varDef" id="7FXXF-WOT440rb^Q=w(n">num</field>
+										<value name="valinp1">
+											<block type="cout_endl" id=";tb%s;r+4CZwsA1ZfG:^"/>
+										</value>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		<label text="Get the negative of a number" web-class="labelMath"></label>
+	
+		<block type="include_iostream" id="mZf!D$pKJ,c$Y?ogAmm8">
+		<next>
+			<block type="using_namespace_std" id="m(JzYJRG-6+pNmGMri/6">
+			<next>
+				<block type="main" id="/lJKzg0vlN!V`Q^`1kqy">
+				<statement name="NAME">
+					<block type="comment_single" id="vCxvY%D0G{5UpRM?5%uD">
+					<field name="input">declare and initialize num</field>
+					<next>
+						<block type="variable_declare" id="^ETwEJmfN6sg:c/gLxZ1">
+						<field name="myVarType">myVarTypeInt</field>
+						<field name="myVarDec" id="fPbF%8#xzM`jq1Go%{s!">num</field>
+						<value name="NAME">
+							<block type="var_initialization" id="$BOjD6-t%LL*|rOCz;|$">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">125</field>
+							</block>
+						</value>
+						<next>
+							<block type="comment_single" id="[h0;v0!2S|r**B^:kU0_">
+							<field name="input">declare negativeNum and initialize it with the negative value of num</field>
+							<next>
+								<block type="variable_declare" id="+TqXk?9MBJAo=0[[Z$!(">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="myVarDec" id="e$:3x9M=c3VscEnLGW#B">negativeNum</field>
+								<value name="NAME">
+									<block type="math_unary" id=":9^asfTKU6/AHc)*Z=Mw">
+									<value name="valinp1">
+										<block type="variables_get" id="4LVx+7KGq@qN.051j)f8">
+										<field name="VAR" id="fPbF%8#xzM`jq1Go%{s!">num</field>
+										</block>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="(Oxj/TjqV%itL)wxV8Y/">
+									<field name="input">output negativeNum</field>
+									<next>
+										<block type="output_cout" id="ATqM;)1@z5z;YWQSU(tA">
+										<value name="NAME">
+											<block type="cout_var" id="J_:1#_}bB)aALk::23Ar">
+											<field name="varDef" id="e$:3x9M=c3VscEnLGW#B">negativeNum</field>
+											<value name="valinp1">
+												<block type="cout_endl" id="9|vJ5StSeWxdW_MqE5b+"/>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</statement>
+				</block>
+			</next>
+			</block>
+		</next>
+		</block>
+
+
+		<label text="Using exponential numbers" web-class="labelMath"></label>
+		  
+		  <block type="include_iostream" id="7H5fBa?f(U?Bc8!hGb=-">
+			<next>
+				<block type="using_namespace_std" id="$SihbVg((@*HhC;vov%L">
+				<next>
+					<block type="main" id="zsenVjnW0WAtTL!K9J,*">
+					<statement name="NAME">
+						<block type="comment_single" id="s94nVnN!C9T*@P^@}c[-">
+						<field name="input">declare expNumber and initialize it using exponential numbers</field>
+						<next>
+							<block type="variable_declare" id="7ZM-eIj5XK|Q8rmHk=+;">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="myVarDec" id="#i_%tFic^gYn?[xT|MY,">expNumber</field>
+							<value name="NAME">
+								<block type="math_scinum" id="rhU`)RpIC~Dzw.VslCFk">
+								<field name="num1">1.25</field>
+								<field name="num2">4</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="2ZX{=5I]b@I.:Hk(V#M*">
+								<field name="input">output expNumber (12500)</field>
+								<next>
+									<block type="output_cout" id="S-KVpiMgBP5vwP2il#Y?">
+									<value name="NAME">
+										<block type="variables_get" id="T:@1yow$YH,wqcUweesv">
+										<field name="VAR" id="#i_%tFic^gYn?[xT|MY,">expNumber</field>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+	
+		<label text="Square Root a number" web-class="labelMath"></label>
+	
+			<block type="include_iostream" id="1YRl%@j+m~QQXC;o2Mc-">
+			<next>
+				<block type="include_math" id="j677/xT=,0eS@_~S#UL-">
+				<next>
+					<block type="using_namespace_std" id="4;%0/(zB:[ECI8[?a~/u">
+					<next>
+						<block type="main" id="l$/PQv;*4J(N^Taj@U):">
+						<statement name="NAME">
+							<block type="comment_single" id="iwJ],dPpObTC3)$;dUG!">
+							<field name="input">declare and initialize squareNum with a square number</field>
+							<next>
+								<block type="variable_declare" id="PvEw*mh.+eH7YoD{hshP">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="myVarDec" id="3HUuDtzDYIez][.H;cIo">squareNum</field>
+								<value name="NAME">
+									<block type="var_initialization" id="/#Q$i#JNRa^bP*0nK3[E">
+									<field name="myVarType">myVarTypeDouble</field>
+									<field name="text1">25</field>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="u]19)arkRG=5Ef%E.+z0">
+									<field name="input">output the square root of squareNum</field>
+									<next>
+										<block type="output_cout" id="S^imUhu`Ax%F)wAAz|8!">
+										<value name="NAME">
+											<block type="math_sqrt" id="t|Pl/Cg[-2K=ar0H~cvT">
+											<value name="NAME">
+												<block type="variables_get" id="RJ6rQV7iPc)Be_5_v{MN">
+												<field name="VAR" id="3HUuDtzDYIez][.H;cIo">squareNum</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+	
+		<label text="Generate a Random Number" web-class="labelMath"></label>
+	
+			<block type="include_iostream" id="XX`,*:hsZ^/j#%@IzP~F">
+			<next>
+				<block type="include_math" id="K%)0q^pvdqdy|/-zys$a">
+				<next>
+					<block type="include_time" id="I*bLk6)zh@y%M4E#d?OV">
+					<next>
+						<block type="using_namespace_std" id="m6gO2-dcanqO%uo=},u6">
+						<next>
+							<block type="main" id="2Ge)]3q7_u#}{1^,=;)3">
+							<statement name="NAME">
+								<block type="comment_single" id="v7@z2Y1ROp8`e2-xTRkg">
+								<field name="input">srand to seed the pseudo random number generator</field>
+								<next>
+									<block type="comment_single" id="Wv3by))LbvlZq}XZ5+V%">
+									<field name="input">time(NULL) to get how many seconds between now from 1/1/70</field>
+									<next>
+										<block type="comment_single" id="@-o$,}:4?400Ydy3};i*">
+										<field name="input">since very second increases since then, srand(time(NULL))...</field>
+										<next>
+											<block type="comment_single" id="JCxOlSEUjF}Lg.pB0;X1">
+											<field name="input">...will generate a unique series of numbers every time</field>
+											<next>
+												<block type="number_srand" id="*4x|6ut*m^2p7Tx#^#$e">
+												<value name="NAME">
+													<block type="time_time" id="rzp/,g_8y^%Oa9X-=B=s"/>
+												</value>
+												<next>
+													<block type="output_cout" id="O-%9q/aT](23#9/}{H$9">
+													<value name="NAME">
+														<block type="number_rand" id="[etmiA{DYSY}6PCR{Ros">
+														<value name="NAME1">
+															<block type="var_initialization" id="7C@TLGQ#k(C4nakH2K5c">
+															<field name="myVarType">myVarTypeInt</field>
+															<field name="text1">10</field>
+															</block>
+														</value>
+														<value name="NAME2">
+															<block type="var_initialization" id="W}?c=F[!kfUOEKUk;am+">
+															<field name="myVarType">myVarTypeInt</field>
+															<field name="text1">1</field>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</statement>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+	
+		<label text="Compute the remainder of a number" web-class="labelMath"></label>
+			
+			<block type="include_iostream" id="N6*JWr;;8RUH,5@$e36o">
+			<next>
+				<block type="using_namespace_std" id="`k5t^VF67=~i$Oy!#}4Z">
+				<next>
+					<block type="main" id="gER7qboS]I![+oNiq*Jb">
+					<statement name="NAME">
+						<block type="comment_single" id="yrYaAZu*/8?^r@cs]m7D">
+						<field name="input">declare and initialize variable num</field>
+						<next>
+							<block type="variable_declare" id="rmVmLtoNyrzI6RlX=~$=">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="myVarDec" id="7FXXF-WOT440rb^Q=w(n">num</field>
+							<value name="NAME">
+								<block type="var_initialization" id="l3~K;}+00zo(OJ{/39V.">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">25</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="IsYl4R1Q.q0ap/+_sd)k">
+								<field name="input">output the remainder of 25 by 4. (4 * 6 = 24, remainder is 1)</field>
+								<next>
+									<block type="comment_single" id="LP03N/H~`fY)snPK?R9Y">
+									<field name="input">if num were 26, output would be 2, 27 would output 3, 28 would output 0</field>
+									<next>
+										<block type="output_cout" id="5#!L{J`P-r~KHt][xX@U">
+										<value name="NAME">
+											<block type="math_mod" id="]sK}hqj#z:cCu`.[[6n$">
+											<value name="valinp1">
+												<shadow xmlns="" type="math_number">
+												<field name="NUM">2</field>
+												</shadow>
+												<block type="variables_get" id="Zl!6Sk}8f[=##?nh|]y0">
+												<field name="VAR" id="7FXXF-WOT440rb^Q=w(n">num</field>
+												</block>
+											</value>
+											<value name="valinp2">
+												<shadow xmlns="" type="math_number">
+												<field name="NUM">1</field>
+												</shadow>
+												<block type="var_initialization" id="/=JwN4W$U`?0R%Q{A7ek">
+												<field name="myVarType">myVarTypeInt</field>
+												<field name="text1">4</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+	
+	
+		<label text="Get the absolute value" web-class="labelMath"></label>
+		
+			<block type="include_iostream" id="a1+AW|]9aJ{wfZYcfP![">
+			<next>
+				<block type="include_math" id="5a)o#?.eLO[B{aCehHJ,">
+				<next>
+					<block type="using_namespace_std" id="5]Tf5Z[VW1_^A`{F)c/.">
+					<next>
+						<block type="main" id="Udit$;Z|frzLmGvr6!T-">
+						<statement name="NAME">
+							<block type="comment_single" id="F!~w`bl1sB[AX[a=W.dW">
+							<field name="input">declare and initialize variable num</field>
+							<next>
+								<block type="variable_declare" id="[c_Xtq`fGa/n@ZEc@0:V">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="myVarDec" id="WCOf7oZJT.,,Bcci%+oW">num</field>
+								<value name="NAME">
+									<block type="var_initialization" id="xEUj.~bqGy|%y0ru_V)Y">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">-362</field>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="aTn^@GY1ry/H[jpd8@})">
+									<field name="input">output the absolute value of num</field>
+									<next>
+										<block type="output_cout" id="hI~CJBf!?`zW)At(}Y.X">
+										<value name="NAME">
+											<block type="math_fabs" id=".dG/w7XsOY:kn^Zgcw$S">
+											<value name="valinp1">
+												<shadow type="math_number" id="Tcpm];}J|CANH4?F:X94">
+												<field name="NUM">-5</field>
+												</shadow>
+												<block type="variables_get" id="o$/9fFGJ+W8Ck;@UYdik">
+												<field name="VAR" id="WCOf7oZJT.,,Bcci%+oW">num</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		
+		<label text="Calculate the power of a number" web-class="labelMath"></label>
+		
+			<block type="include_iostream" id="a1+AW|]9aJ{wfZYcfP![">
+			<next>
+				<block type="include_math" id="5a)o#?.eLO[B{aCehHJ,">
+				<next>
+					<block type="using_namespace_std" id="5]Tf5Z[VW1_^A`{F)c/.">
+					<next>
+						<block type="main" id="Udit$;Z|frzLmGvr6!T-">
+						<statement name="NAME">
+							<block type="comment_single" id="F!~w`bl1sB[AX[a=W.dW">
+							<field name="input">declare and initialize variable num</field>
+							<next>
+								<block type="variable_declare" id="[c_Xtq`fGa/n@ZEc@0:V">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="myVarDec" id="WCOf7oZJT.,,Bcci%+oW">num</field>
+								<value name="NAME">
+									<block type="var_initialization" id="xEUj.~bqGy|%y0ru_V)Y">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">5</field>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="aTn^@GY1ry/H[jpd8@})">
+									<field name="input">output the power of num by 2 (5^2)</field>
+									<next>
+										<block type="output_cout" id="hI~CJBf!?`zW)At(}Y.X">
+										<value name="NAME">
+											<block type="math_pow" id="UI`Gn9KLOYDjzc~am^}K">
+											<value name="valinp1">
+												<shadow type="math_number" id="T$a;U_+d(J~QQKnkh^N}">
+												<field name="NUM">2</field>
+												</shadow>
+												<block type="variables_get" id="v|)f+-b*jw}r|Bx),*yn">
+												<field name="VAR" id="WCOf7oZJT.,,Bcci%+oW">num</field>
+												</block>
+											</value>
+											<value name="valinp2">
+												<shadow type="math_number" id="WUrr]@rj]~7u9pV!4N@$">
+												<field name="NUM">2</field>
+												</shadow>
+												<block type="var_initialization" id="5LrcYGE8A]KI7$_dO-p;">
+												<field name="myVarType">myVarTypeInt</field>
+												<field name="text1">2</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		
+		
+		<label text="Static Cast a number (convert a number type into another number type)" web-class="labelMath"></label>
+		
+			<block type="include_iostream" id="$hTb=yu-,7Yg?!}xuV[N">
+			<next>
+				<block type="using_namespace_std" id="5oR_U!MZwJ`}6~MDdS@4">
+				<next>
+					<block type="main" id="(3XCfh.]kC$=I[/JLbkd">
+					<statement name="NAME">
+						<block type="comment_single" id="KG_`zi|(6V~y:fjGrJyD">
+						<field name="input">declare and initialize num</field>
+						<next>
+							<block type="variable_declare" id="lOdr]3D~czlBIRMcDCGU">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="|%W4]{{mnI^oo+veRe}Y">num</field>
+							<value name="NAME">
+								<block type="var_initialization" id="U)};w]XAM)VtPzb1?)5%">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="text1">25.3</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="]y]-bO+b)Ujd`G/;sN)O">
+								<field name="input">declare newNum, and initialize it with static_cast</field>
+								<next>
+									<block type="variable_declare" id="lbBUuqw}0fTMe-l{~vlj">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="myVarDec" id="C^.Oq{epBKN^yVyvBdFM">newNum</field>
+									<value name="NAME">
+										<block type="static_cast" id="-PMM4aM*r[piL_Y3(]]Z">
+										<field name="myType">myTypeInt</field>
+										<value name="valinp1">
+											<shadow type="math_number" id="B-IH+n|!US9lhf4.FaMl">
+											<field name="NUM">5</field>
+											</shadow>
+											<block type="variables_get" id="xMP|9K{R4}kdu6pDx;?+">
+											<field name="VAR" id="|%W4]{{mnI^oo+veRe}Y">num</field>
+											</block>
+										</value>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="QdRx/hFLWQ/fd:%{V1yK">
+										<field name="input">output newNum</field>
+										<next>
+											<block type="output_cout" id="XL0n8(+O7*[+[NiLzta)">
+											<value name="NAME">
+												<block type="cout_output" id="qk*W]u7!WdsY)|%h#{,m">
+												<field name="inp">output of newNum: </field>
+												<value name="NAME">
+													<block type="cout_var" id="[%H(5:DHxB6F%bt5yUi:">
+													<field name="varDef" id="C^.Oq{epBKN^yVyvBdFM">newNum</field>
+													<value name="valinp1">
+														<block type="cout_endl" id="7]VAWvW6=)r1Nt]*L2hQ"/>
+													</value>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		
+		<label text="Constant PI (calculating the circumference of a circle)" web-class="labelMath"></label>
+		
+			<block type="include_iostream" id="8r/trzrfPMzNP-BB/B!V">
+			<next>
+				<block type="using_namespace_std" id="n#w;P0ndIb(9+-x%hJpb">
+				<next>
+					<block type="main" id="=O|xaBU}#@QKky}|MS#u">
+					<statement name="NAME">
+						<block type="comment_single" id="$ewO7NW)mb(:i]e5Q`Ay">
+						<field name="input">declare and initialize PI</field>
+						<next>
+							<block type="math_pi" id="{kE$$u/1~)Ov{EMS6D5A">
+							<field name="valinp1" id="^1`UZuSo.9R!6X=UaSo$">PI_VAL</field>
+							<next>
+								<block type="comment_single" id="C:/+(G;aS@N{qUHo4`RC">
+								<field name="input">the radius of the circle</field>
+								<next>
+									<block type="variable_declare" id="@dYx^@/+-,S%rVyFX/KF">
+									<field name="myVarType">myVarTypeDouble</field>
+									<field name="myVarDec" id="g-HxA5jYG,_IcH3hUUs`">radius</field>
+									<value name="NAME">
+										<block type="var_initialization" id="(8~^E#l/LqB2,`:Mvp4,">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">2.5</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="X-,T(k^/Sv|fb;n{plaH">
+										<field name="input">output the calculated circumference (2PI * r)</field>
+										<next>
+											<block type="output_cout" id="OCcEY7h86OXEQ.(Hez:e">
+											<value name="NAME">
+												<block type="cout_output" id="q6;=fJPMt~%,Vf/h*wb}">
+												<field name="inp">The circumference of the circle is: </field>
+												<value name="NAME">
+													<block type="math_arith" id="+qYwzW#pE6D{(J}8)haT">
+													<field name="arith_op">math_mul</field>
+													<field name="math_parenth">parenthNo</field>
+													<value name="valinp1">
+														<shadow xmlns="" type="math_number">
+														<field name="NUM">1</field>
+														</shadow>
+														<block type="variables_get" id="SC%FVc`i`Ptd(4+831%Y">
+														<field name="VAR" id="g-HxA5jYG,_IcH3hUUs`">radius</field>
+														</block>
+													</value>
+													<value name="valinp2">
+														<shadow xmlns="" type="math_number">
+														<field name="NUM">1</field>
+														</shadow>
+														<block type="math_arith" id="1A6usA5N@jxl_asr|!CH">
+														<field name="arith_op">math_mul</field>
+														<field name="math_parenth">parenthYes</field>
+														<value name="valinp1">
+															<shadow type="math_number" id="^-wIL8K4EfZe#=N~@/.[">
+															<field name="NUM">2</field>
+															</shadow>
+														</value>
+														<value name="valinp2">
+															<shadow xmlns="" type="math_number">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="variables_get" id="JM^wPLQEimz24,[{+OD5">
+															<field name="VAR" id="^1`UZuSo.9R!6X=UaSo$">PI_VAL</field>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+	
+	
+		<label text="Arithmetic Operations (Quadratic Formula)" web-class="labelMath"></label>
+
+		  <block type="include_iostream" id="tP|u7*kUjuq,{FnthlX(">
+			<next>
+				<block type="include_math" id="CBMj=x~$Os8a)i7Mk3+x">
+				<next>
+					<block type="using_namespace_std" id=";pot}q)bAY~=![3pFiD)">
+					<next>
+						<block type="main" id="6ed58hjlN^Mj~.?[MbJI">
+						<statement name="NAME">
+							<block type="variable_declare" id="Vf,xQY^tE(flvxXW+(Xx">
+							<field name="myVarType">myVarTypeDouble</field>
+							<field name="myVarDec" id="r`|+b,mgOrWL^Rf]/`5o">a</field>
+							<value name="NAME">
+								<block type="var_initialization" id="WrlDGjZr[Z52IWy|h{Rf">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="text1">1.25</field>
+								</block>
+							</value>
+							<next>
+								<block type="variable_declare" id="%bAx1qd6@teiEj%9[M20">
+								<field name="myVarType">myVarTypeDouble</field>
+								<field name="myVarDec" id="v?YMZ0QM2f0^LII(k/@[">b</field>
+								<value name="NAME">
+									<block type="var_initialization" id="$PZ=7Y+i{BTMm!ZEKWFB">
+									<field name="myVarType">myVarTypeDouble</field>
+									<field name="text1">2.50</field>
+									</block>
+								</value>
+								<next>
+									<block type="variable_declare" id="B3H?`6[x)2ps`W59P2Pn">
+									<field name="myVarType">myVarTypeDouble</field>
+									<field name="myVarDec" id="r?6;Wv#-_5F)5Bfarw6;">c</field>
+									<value name="NAME">
+										<block type="var_initialization" id="yCcD1Ztp5k8d7qqMX(0,">
+										<field name="myVarType">myVarTypeDouble</field>
+										<field name="text1">3.75</field>
+										</block>
+									</value>
+									<next>
+										<block type="output_cout" id="*,cn/?9$/r6^;WdK6waK">
+										<value name="NAME">
+											<block type="math_arith" id="Oo2!mIa}b3]t268~)T$m">
+											<field name="arith_op">math_div</field>
+											<field name="math_parenth">parenthYes</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="tZ7Y8)9|*U{RsF#R,nFG">
+												<field name="NUM">1</field>
+												</shadow>
+												<block type="math_arith" id=")lT;e{ZmK68ewG7YHdvl">
+												<field name="arith_op">math_add</field>
+												<field name="math_parenth">parenthYes</field>
+												<value name="valinp1">
+													<shadow type="math_number" id="CL#YAd[V=I!Y990vS+tV">
+													<field name="NUM">1</field>
+													</shadow>
+													<block type="math_unary" id="Yf5cfNcRiWS|1tsN?)gn">
+													<value name="valinp1">
+														<block type="variables_get" id="7KrdbjSob$09F_k#I0^I">
+														<field name="VAR" id="v?YMZ0QM2f0^LII(k/@[">b</field>
+														</block>
+													</value>
+													</block>
+												</value>
+												<value name="valinp2">
+													<shadow type="math_number" id="k}|^SUcK{Bwi!O]Vkbfj">
+													<field name="NUM">1</field>
+													</shadow>
+													<block type="math_sqrt" id="C+hc2oPSkvbUXmW86Zl)">
+													<value name="NAME">
+														<block type="math_arith" id="I9,r+_r_%Il/-NJ9Ah+L">
+														<field name="arith_op">math_min</field>
+														<field name="math_parenth">parenthNo</field>
+														<value name="valinp1">
+															<shadow type="math_number" id=":j%*F#i}tKeazmxr[[d^">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="math_pow" id="|M*6EkD]M|P.Vd)M8Fe*">
+															<value name="valinp1">
+																<shadow type="math_number" id="L(9AabjYx/qnc@dhZcEM">
+																<field name="NUM">2</field>
+																</shadow>
+																<block type="variables_get" id="e}JJ7.UitzR`3A1CqDer">
+																<field name="VAR" id="v?YMZ0QM2f0^LII(k/@[">b</field>
+																</block>
+															</value>
+															<value name="valinp2">
+																<shadow type="math_number" id="l$`bV2^#cC|voi6:VcX1">
+																<field name="NUM">2</field>
+																</shadow>
+															</value>
+															</block>
+														</value>
+														<value name="valinp2">
+															<shadow type="math_number" id="r*+cq)pe=mcpDMVNNc1*">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="math_arith" id="a]:HY%u.b1hiOrN#2AU`">
+															<field name="arith_op">math_mul</field>
+															<field name="math_parenth">parenthYes</field>
+															<value name="valinp1">
+																<shadow type="math_number" id="Vt%+]vcEwl_;71ZMCBNB">
+																<field name="NUM">4</field>
+																</shadow>
+															</value>
+															<value name="valinp2">
+																<shadow type="math_number" id="udlXUa.pCV4#U($bq+8[">
+																<field name="NUM">1</field>
+																</shadow>
+																<block type="math_arith" id=":u`JM]~tU[g+GHr.08j3">
+																<field name="arith_op">math_mul</field>
+																<field name="math_parenth">parenthNo</field>
+																<value name="valinp1">
+																	<shadow type="math_number" id=",%hYl-!h`gQ%GdQQf`(p">
+																	<field name="NUM">1</field>
+																	</shadow>
+																	<block type="variables_get" id="H|?N/%F2n5w:C.7qoIf`">
+																	<field name="VAR" id="r`|+b,mgOrWL^Rf]/`5o">a</field>
+																	</block>
+																</value>
+																<value name="valinp2">
+																	<shadow type="math_number" id="-_CnfjxcaY:J2-i|.6xl">
+																	<field name="NUM">1</field>
+																	</shadow>
+																	<block type="variables_get" id="X(}d0]|{4RLv_`j.IvyV">
+																	<field name="VAR" id="r?6;Wv#-_5F)5Bfarw6;">c</field>
+																	</block>
+																</value>
+																</block>
+															</value>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</value>
+												</block>
+											</value>
+											<value name="valinp2">
+												<shadow type="math_number" id="|WRdO$qXi]K:Utbv^yP#">
+												<field name="NUM">1</field>
+												</shadow>
+												<block type="math_arith" id="BWX=H0/$Te`]=N%L`3,L">
+												<field name="arith_op">math_mul</field>
+												<field name="math_parenth">parenthYes</field>
+												<value name="valinp1">
+													<shadow type="math_number" id="_Zm!KT.LI|F/jV-rZ].z">
+													<field name="NUM">2</field>
+													</shadow>
+												</value>
+												<value name="valinp2">
+													<shadow type="math_number" id="knvQf$1x9hsB:e1(?V7l">
+													<field name="NUM">1</field>
+													</shadow>
+													<block type="variables_get" id="2l|f(VflH{X0xnR*RaX9">
+													<field name="VAR" id="r`|+b,mgOrWL^Rf]/`5o">a</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+	
+	</category>
+	
+    <category name="Examples Chapter 3" colour="#5B80A5">
+	
+		<category name="Logic Examples" colour="#5B80A5">
+		
+			
+		
+		</category>
+		
+		<category name="cctype Examples" colour="#5BA59F">
+		
+			<block type="include_iostream" id="]MWVJI1crsC*j{X[V;[l">
+			<next>
+				<block type="using_namespace_std" id="{Pc`:*D.4:@pnvD[K4{j">
+				<next>
+					<block type="main" id="[vYOcbP(iEp9,:yyQJ=r">
+					<statement name="NAME">
+						<block type="comment_single" id="/1HVY^)8e4RF;:6bq}UR">
+						<field name="input">declare and initialize myVar</field>
+						<next>
+							<block type="variable_declare" id="!}GWJNCUit3S9Uo8GQg5">
+							<field name="myVarType">myVarTypeChar</field>
+							<field name="myVarDec" id="$ZbEpn!5o+I}4=^FJx[D">myVar</field>
+							<value name="NAME">
+								<block type="var_initialization" id="4q[JdfN(O8ic|~PJ5cOq">
+								<field name="myVarType">myVarTypeChar</field>
+								<field name="text1">a</field>
+								</block>
+							</value>
+							<next>
+								<block type="comment_single" id="Pr35J|9aiA8Hhz0WR/D/">
+								<field name="input">if myVar is a letter</field>
+								<next>
+									<block type="controls_if" id=".fVj|h1rbAWyw7*Qo_|T">
+									<value name="IF0">
+										<block type="cctype_isalpha" id=";t/H,o#,^ficj4)jD8I,">
+										<value name="valinp1">
+											<block type="variables_get" id="B*qU:%[@@.EJ4N=E}@jp">
+											<field name="VAR" id="$ZbEpn!5o+I}4=^FJx[D">myVar</field>
+											</block>
+										</value>
+										</block>
+									</value>
+									<statement name="DO0">
+										<block type="comment_single" id="y/#!;rbA%)_DH20!}NwN">
+										<field name="input">output character</field>
+										<next>
+											<block type="output_cout" id="fJ@@eKFDDB(L_f.s_BIS">
+											<value name="NAME">
+												<block type="cout_var" id="=s6_+LEP8)@`kO;U/gM4">
+												<field name="varDef" id="$ZbEpn!5o+I}4=^FJx[D">myVar</field>
+												<value name="valinp1">
+													<block type="cout_output" id="yBOvErF{/0`FJ4t?fEG_">
+													<field name="inp"> is a character!</field>
+													<value name="NAME">
+														<block type="cout_endl" id="d:z`?j7U~-iQcM1Gy!V^"/>
+													</value>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</next>
+										</block>
+									</statement>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+		
+		</category>
+		
+		<category name="Switch Case Examples" colour="#A5A55B">
+			
+		<label text="Switch Case Statement" web-class="labelSwitch"></label>
+				
+		<block type="include_iostream" id="d6:zDX!Cx25*M_4G.:!z">
+		<next>
+			<block type="using_namespace_std" id="hnGz,AEKD!0iK0LUbnk9">
+			<next>
+				<block type="main" id="HyAB;cU$swJ~84cS;v1Q">
+				<statement name="NAME">
+					<block type="variable_declare" id="kM,3|ITja(Ba5:$nLdar">
+					<field name="myVarType">myVarTypeInt</field>
+					<field name="myVarDec" id="!iKKr;oTI44_c+C#/+4u">myVar</field>
+					<value name="NAME">
+						<block type="number_rand" id="9wX)KvtI%m56%lIJXP`m">
+						<value name="NAME1">
+							<block type="var_initialization" id="qEWo`;*[eN,BIZv1q*/c">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">5</field>
+							</block>
+						</value>
+						<value name="NAME2">
+							<block type="var_initialization" id="?O4B.7G`?tnjV*b]wv_,">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">1</field>
+							</block>
+						</value>
+						</block>
+					</value>
+					<next>
+						<block type="switch_statement" id="b^el0Oc;Ub.RU1{[Ob|f">
+						<value name="valinp1">
+							<block type="variables_get" id="98cfY.h?FaOKryZ{jUj$">
+							<field name="VAR" id="!iKKr;oTI44_c+C#/+4u">myVar</field>
+							</block>
+						</value>
+						<statement name="state1">
+							<block type="switch_case" id="2|M@J}|r@`Vah,~JF#tO">
+							<value name="valinp1">
+								<block type="var_initialization" id="AuK0H=khY1c~J@cEE0C=">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">3</field>
+								</block>
+							</value>
+							<statement name="state1">
+								<block type="output_cout" id="qRTBr?41W6,V{9El%;xe">
+								<value name="NAME">
+									<block type="cout_output" id="kwZHC%6`z3l8_ltL3lby">
+									<field name="inp">myVar is 3</field>
+									<value name="NAME">
+										<block type="cout_endl" id="7ANPj1Ug!qMQ-F*r0BMP"/>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="switch_break" id="qe%SRexy*{j$q(@[dgi*"/>
+								</next>
+								</block>
+							</statement>
+							<next>
+								<block type="switch_case" id=",+Pxet`#Y!Yr5vKQRwc+">
+								<value name="valinp1">
+									<block type="var_initialization" id="0wQjwgB`%pS~h8l`tdmB">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">2</field>
+									</block>
+								</value>
+								<statement name="state1">
+									<block type="output_cout" id="YW!Q9|c:m(doQU+k))oR">
+									<value name="NAME">
+										<block type="cout_output" id="3PC}O^;9U%=brG-=MTLn">
+										<field name="inp">myVar is 2</field>
+										<value name="NAME">
+											<block type="cout_endl" id="-sXzd8Le,y8fYFC,Kj{}"/>
+										</value>
+										</block>
+									</value>
+									<next>
+										<block type="switch_break" id="Ap/dQxlz8YSxo#n}nU{8"/>
+									</next>
+									</block>
+								</statement>
+								<next>
+									<block type="switch_case" id=";%MK0$yKD-1dB@J{Nj|l">
+									<value name="valinp1">
+										<block type="var_initialization" id="sMQf!@bzHr6]6+Q`e`{H">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">1</field>
+										</block>
+									</value>
+									<statement name="state1">
+										<block type="output_cout" id="k0PV[Tnv9kd:RT=GWRsH">
+										<value name="NAME">
+											<block type="cout_output" id="U%.r.z{%(krCZ(|eN.Tg">
+											<field name="inp">myVar is 1</field>
+											<value name="NAME">
+												<block type="cout_endl" id="Va~aZlNT`fJXVj/zOGRf"/>
+											</value>
+											</block>
+										</value>
+										<next>
+											<block type="switch_break" id="^.4Ev8Mx}`)usKT!25{("/>
+										</next>
+										</block>
+									</statement>
+									<next>
+										<block type="switch_default" id=",7bWsszMr%jI|rTRW;*w">
+										<statement name="state1">
+											<block type="output_cout" id="3|ed}0Nf)W.,_ypc%W4z">
+											<value name="NAME">
+												<block type="cout_output" id="5O=q8Vz)jSaO996A(p0X">
+												<field name="inp">myVar is not 1, 2 or 3 (it is </field>
+												<value name="NAME">
+													<block type="cout_var" id="qD.d#7}x~V7|a0aa9|Y#">
+													<field name="varDef" id="!iKKr;oTI44_c+C#/+4u">myVar</field>
+													<value name="valinp1">
+														<block type="cout_output" id="wOGs_nyCUA8y!:v2cI?Y">
+														<field name="inp">)</field>
+														<value name="NAME">
+															<block type="cout_endl" id="~hjCdJ$`=C5`X@w!%7`B"/>
+														</value>
+														</block>
+													</value>
+													</block>
+												</value>
+												</block>
+											</value>
+											<next>
+												<block type="switch_break" id="@JjHjg(ctLX#aWutKbG)"/>
+											</next>
+											</block>
+										</statement>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</statement>
+				</block>
+			</next>
+			</block>
+		</next>
+		</block>
+	
+
+			
+		</category>
+	
+	</category>
+	
+    <category name="Examples Chapter 4" colour="#5BA56D">
+		
+		<category name="For-Loop Examples" colour="#5BA56D">
+		
+		<label text="Iterating through a for-loop" web-class="labelLoops"></label>
+			
+		<block type="include_iostream" id=":/-,K:BWM~iWS?:2i#X@">
+			<next>
+				<block type="using_namespace_std" id="$2)hAJ*qg;e1I~]:aBMx">
+				<next>
+					<block type="main" id="pys_LUCw[@`w5p2bSUB0">
+					<statement name="NAME">
+						<block type="variable_declare" id="#GENfwTsAK[(H4{%[ll:">
+						<field name="myVarType">myVarTypeInt</field>
+						<field name="myVarDec" id="ksP0m@C7oSxv];54-fwa">sum</field>
+						<value name="NAME">
+							<block type="var_initialization" id=")CKqq|kdynnnevi,6UV:">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">0</field>
+							</block>
+						</value>
+						<next>
+							<block type="loop_for" id="^!WV#c[_j#uaz9*G!7sX">
+							<field name="myLoopVarType">myLoopVarInt</field>
+							<field name="myLoopVar1" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+							<field name="myLoopVar2" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+							<field name="myLoopVarComp">LESSER</field>
+							<field name="myLoopVar3" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+							<field name="myLoopCh">myLoopInc</field>
+							<value name="valinp1">
+								<shadow type="math_number" id="6et_WB`e59;92gFXz~Tp">
+								<field name="NUM">0</field>
+								</shadow>
+							</value>
+							<value name="valinp2">
+								<shadow type="math_number" id="jgx}oDby0C`d!hZ;/cip">
+								<field name="NUM">10</field>
+								</shadow>
+							</value>
+							<statement name="stateinp1">
+								<block type="var_change" id="!U)Nl^T3GV!@1X(*XB~d">
+								<field name="myVarDef" id="ksP0m@C7oSxv];54-fwa">sum</field>
+								<value name="valinp1">
+									<shadow type="math_number" id="E@@7@J+t,1uLbEEAh@.I">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="variables_get" id="B,)sV_0,K4o$J]^SOmT3">
+									<field name="VAR" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+									</block>
+								</value>
+								</block>
+							</statement>
+							<next>
+								<block type="output_cout" id="{7u4cL0Z^VUulIU=MK6u">
+								<value name="NAME">
+									<block type="cout_output" id="2L)g-cIGIv:j]{ChK:NX">
+									<field name="inp">Sum of the loop is: </field>
+									<value name="NAME">
+										<block type="cout_var" id=")@}uZ5%*~l[x*:[`!#h`">
+										<field name="varDef" id="ksP0m@C7oSxv];54-fwa">sum</field>
+										<value name="valinp1">
+											<block type="cout_endl" id="qTV3gRqrwe%Fa-7(Lshi"/>
+										</value>
+										</block>
+									</value>
+									</block>
+								</value>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+		</block>
+		
+		<label text="Iterating through a 2D for-loop" web-class="labelLoops"></label>
+		
+		<block type="include_iostream" id="5y#z?LSmt.iDi:2Ie[Ns">
+	<next>
+		<block type="using_namespace_std" id="LJq9(js^-5;%ySNj|IeB">
+		<next>
+			<block type="main" id="o=fh=*k}Fp@!G]k1n!%W">
+			<statement name="NAME">
+				<block type="variable_declare" id="vx!ER$MgEze-5_efkKg:">
+				<field name="myVarType">myVarTypeInt</field>
+				<field name="myVarDec" id="ksP0m@C7oSxv];54-fwa">sum</field>
+				<value name="NAME">
+					<block type="var_initialization" id="r~brQq8U8.}|=S]CQdmc">
+					<field name="myVarType">myVarTypeInt</field>
+					<field name="text1">0</field>
+					</block>
+				</value>
+				<next>
+					<block type="loop_for" id="4!?a?@JVmZgux:[c*YoT">
+					<field name="myLoopVarType">myLoopVarInt</field>
+					<field name="myLoopVar1" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+					<field name="myLoopVar2" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+					<field name="myLoopVarComp">LESSER</field>
+					<field name="myLoopVar3" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+					<field name="myLoopCh">myLoopInc</field>
+					<value name="valinp1">
+						<shadow type="math_number" id="T1kgo(cp5^_y]`#FG(n4">
+						<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="valinp2">
+						<shadow type="math_number" id="x{q:kHQ=OA.s0^c9SNy0">
+						<field name="NUM">10</field>
+						</shadow>
+					</value>
+					<statement name="stateinp1">
+						<block type="loop_for" id="QHYgJqY*QiFjv0YPhLYv">
+						<field name="myLoopVarType">myLoopVarInt</field>
+						<field name="myLoopVar1" id="zWwIDM!I:kvD{w7CcKoG">j</field>
+						<field name="myLoopVar2" id="zWwIDM!I:kvD{w7CcKoG">j</field>
+						<field name="myLoopVarComp">LESSER</field>
+						<field name="myLoopVar3" id="zWwIDM!I:kvD{w7CcKoG">j</field>
+						<field name="myLoopCh">myLoopInc</field>
+						<value name="valinp1">
+							<shadow type="math_number" id="L7ehLs,!2jJcg52XF8ET">
+							<field name="NUM">0</field>
+							</shadow>
+						</value>
+						<value name="valinp2">
+							<shadow type="math_number" id="0km}x]F8$Qq7s;`N.9wF">
+							<field name="NUM">10</field>
+							</shadow>
+						</value>
+						<statement name="stateinp1">
+							<block type="var_change" id="NVWh1R|$l(vh*5wch:f5">
+							<field name="myVarDef" id="ksP0m@C7oSxv];54-fwa">sum</field>
+							<value name="valinp1">
+								<shadow type="math_number" id="Rf{76P5$?]Y?);kMEIW.">
+								<field name="NUM">1</field>
+								</shadow>
+								<block type="math_arith" id="SfG/8~h.xu-XnNtqesh^">
+								<field name="arith_op">math_add</field>
+								<field name="math_parenth">parenthYes</field>
+								<value name="valinp1">
+									<shadow type="math_number" id="@[!JFsUiJ6]NS5C3OD{u">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="variables_get" id="zCy6bNcC4*w^qU9*^oYs">
+									<field name="VAR" id="wLh+XRXgnrl*8,ysV}qp">i</field>
+									</block>
+								</value>
+								<value name="valinp2">
+									<shadow type="math_number" id="2:`zbv6yZ$NkJh}lSnAY">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="variables_get" id="XXy./gN91,d#!BKyVo,V">
+									<field name="VAR" id="zWwIDM!I:kvD{w7CcKoG">j</field>
+									</block>
+								</value>
+								</block>
+							</value>
+							</block>
+						</statement>
+						</block>
+					</statement>
+					<next>
+						<block type="output_cout" id="dqvO0$|FVbA1N*O$,B7a">
+						<value name="NAME">
+							<block type="cout_output" id="VOuvM*.MA!~eX9!iPQO`">
+							<field name="inp">Sum of the loop is: </field>
+							<value name="NAME">
+								<block type="cout_var" id="ug=8Hsl64zo)ufoJ:[4M">
+								<field name="varDef" id="ksP0m@C7oSxv];54-fwa">sum</field>
+								<value name="valinp1">
+									<block type="cout_endl" id="c_Fegoxj13fF#s+`u6RX"/>
+								</value>
+								</block>
+							</value>
+							</block>
+						</value>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</statement>
+			</block>
+		</next>
+		</block>
+	</next>
+	</block>
+		
+		</category>
+	
+	</category>
+	
+	<category name="Examples Chapter 5" colour="#80A55B">
+	
+		<label text="Function Declaration and return call" web-class="labelFunction"></label>
+		
+		  <block type="include_iostream" id="4tb8b//GN-7x1=_$ZmaJ">
+			<next>
+				<block type="using_namespace_std" id="WYUc(]B!;fjK[zPyq(#j">
+				<next>
+					<block type="comment_single" id="Re961$nji12;T}L;Y;Oc">
+					<field name="input">declare function addByTwo</field>
+					<next>
+						<block type="user_function" id="Tg99tN:{TgAod?)h/e]K">
+						<field name="myFuncReturn">myFuncInt</field>
+						<field name="myFuncVar" id=":mtq=0~^s%i5jMJwcj,9">addByTwo</field>
+						<value name="NAME">
+							<block type="func_parameters" id="nA!QfL%B}lTGa!OD2yJ5">
+							<field name="myParamType">myParamInt</field>
+							<field name="myPtr">myPtrNone</field>
+							<field name="myParamName" id="wy[~_a6}r|k_W8snS9P5">num</field>
+							</block>
+						</value>
+						<statement name="statement_inp1">
+							<block type="func_return" id="L{xxl(b*IX!.{Y4L^#9#">
+							<value name="NAME">
+								<block type="math_arith" id="K4U70sqI9dfXEf~Z#*eO">
+								<field name="arith_op">math_add</field>
+								<field name="math_parenth">parenthNo</field>
+								<value name="valinp1">
+									<shadow type="math_number" id="p7DVNq_TJl]Q!j234IrK">
+									<field name="NUM">1</field>
+									</shadow>
+									<block type="variables_get" id="7W/-B|^//KcNnFcv%K2n">
+									<field name="VAR" id="wy[~_a6}r|k_W8snS9P5">num</field>
+									</block>
+								</value>
+								<value name="valinp2">
+									<shadow type="math_number" id="1q}~=jf?sv22TN!q]{sp">
+									<field name="NUM">2</field>
+									</shadow>
+									<block type="var_initialization" id="4.U,%p~0R|yLAeKJxnTX">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">2</field>
+									</block>
+								</value>
+								</block>
+							</value>
+							</block>
+						</statement>
+						<next>
+							<block type="main" id="],H*9Z/%qcLfCUhz^Pl|">
+							<statement name="NAME">
+								<block type="comment_single" id="V]etVC!EdjBmF,[+|$K#">
+								<field name="input">declare temp and initialize it as 5</field>
+								<next>
+									<block type="variable_declare" id="fU8EB[ra@==+bjum]~}O">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="myVarDec" id="*fo+|iIIv?K|#{;HCY@W">temp</field>
+									<value name="NAME">
+										<block type="var_initialization" id="-E?:}$oHp[qHB@gqUSu(">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">5</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="S9;:x{T]u}AhgdKQF=f4">
+										<field name="input">output addByTwo with parameter temp</field>
+										<next>
+											<block type="output_cout" id="QLkLNZV?)94hQNwdO,.W">
+											<value name="NAME">
+												<block type="func_call_return" id="wx%X/m$QOwVN(?mt2hDQ">
+												<field name="myFunc" id=":mtq=0~^s%i5jMJwcj,9">addByTwo</field>
+												<value name="valinp1">
+													<block type="func_parameters_call" id="-yT{Ypdh])RbQF1)1dII">
+													<field name="myPtr">myPtrNone</field>
+													<field name="myParamName" id="*fo+|iIIv?K|#{;HCY@W">temp</field>
+													</block>
+												</value>
+												</block>
+											</value>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</statement>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+	
+	</category>
+	
+    <category name="Examples Chapter 6" colour="#5B93A5">
+	
+		<category name="Arrays Examples" colour = "#5B93A5">
+		
+		<label text="Array Declaration" web-class="labelArray"></label>
+		
+		<block type="include_iostream" id="0qMVtHWb%Lb9^g.qm6Ae">
+		<next>
+		<block type="using_namespace_std" id="SZK@v8b~Ab}[?[geK3zv">
+		<next>
+			<block type="main" id="fyV@F5lWeIAiBIf.eU!]">
+			<statement name="NAME">
+				<block type="comment_single" id="PVr95`H1eLj.1@E?J;$f">
+				<field name="input">Array Declaration and Initialization</field>
+				<next>
+					<block type="array" id="o`d!1Tad~}wrC#F3c51D">
+					<field name="myArrType">myArrTypeInt</field>
+					<field name="myArr" id="*wa=gr27*%scKPy:wctT">myArray</field>
+					<field name="myArrSize">3</field>
+					<value name="valinp1">
+						<block type="array_init_literal" id="2@Tuf.4vy+%DB2rWkTP3">
+						<field name="myVarType">myVarTypeInt</field>
+						<field name="text1">1</field>
+						<value name="valinp1">
+							<block type="array_init_literal" id="j=/|-//9#MvE[@Uw`u-I">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">4</field>
+							<value name="valinp1">
+								<block type="array_init_literal" id="rU/5Hq!u~?fF(3PiH(Av">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">9</field>
+								</block>
+							</value>
+							</block>
+						</value>
+						</block>
+					</value>
+					<next>
+						<block type="comment_single" id="z=B0vuf979]:_^s`jPF;">
+						<field name="input">Loop through myArray using a range-based for loop</field>
+						<next>
+							<block type="loop_range" id="6s[)+MPR|t0vU.9F|SfO">
+							<field name="myVar" id=":S!wsH_ja+y*|eY1e@OZ">x</field>
+							<field name="myArrVar" id="*wa=gr27*%scKPy:wctT">myArray</field>
+							<statement name="NAME">
+								<block type="output_cout" id="]m5Zjd]cxBoHu6/bot:G">
+								<value name="NAME">
+									<block type="cout_var" id="R+R?r^bE*V58?(MRo%Um">
+									<field name="varDef" id=":S!wsH_ja+y*|eY1e@OZ">x</field>
+									<value name="valinp1">
+										<block type="cout_endl" id="p}A#Y78%i)?fq+An[og@"/>
+									</value>
+									</block>
+								</value>
+								</block>
+							</statement>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</statement>
+			</block>
+		</next>
+		</block>
+	</next>
+	</block>
+		
+		
+		<label text="Array Elements" web-class="labelArray"></label>
+		
+		<block type="include_iostream" id="R2VlMhwdP0zeePlYt-F*">
+		<next>
+			<block type="using_namespace_std" id="tb;=mr{C@s4WT-Jr|BS`">
+			<next>
+				<block type="main" id="jLK5Y([;u8M,n+A~hxLy">
+				<statement name="NAME">
+					<block type="comment_single" id="B5avy+K%Q7+L1t78FVhg">
+					<field name="input">Array Declaration and Initialization</field>
+					<next>
+						<block type="array" id="b@40x]^kOvCX5c%WS:o-">
+						<field name="myArrType">myArrTypeInt</field>
+						<field name="myArr" id="*wa=gr27*%scKPy:wctT">myArray</field>
+						<field name="myArrSize">3</field>
+						<value name="valinp1">
+							<block type="array_init_literal" id="I-U-F:@{(#A?9D~_8+8w">
+							<field name="myVarType">myVarTypeInt</field>
+							<field name="text1">1</field>
+							<value name="valinp1">
+								<block type="array_init_literal" id="=SH69.5*YW91Hc$_V5u.">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">4</field>
+								<value name="valinp1">
+									<block type="array_init_literal" id="c1;,wYne~.p55sBW;e?B">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">9</field>
+									</block>
+								</value>
+								</block>
+							</value>
+							</block>
+						</value>
+						<next>
+							<block type="comment_single" id="_B@bU~??,$RHXMW3ivtm">
+							<field name="input">Output myArray elements </field>
+							<next>
+								<block type="output_cout" id=".N|q`!Yq+v1r*VPcE+D|">
+								<value name="NAME">
+									<block type="array_index_1d" id=")KCW+FW-:pH$_d8|dYb,">
+									<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+									<value name="valinp1">
+										<shadow type="math_number" id="P|XL^Q5[G?k{+5|R^5HB">
+										<field name="NUM">0</field>
+										</shadow>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="output_cout" id=";yI#kSlXp/ky+bAS!-Bk">
+									<value name="NAME">
+										<block type="cout_endl" id="za.(p3`+m/^NtMj^m{*m"/>
+									</value>
+									<next>
+										<block type="output_cout" id="R/N5V~!C.C3H1#i-Y-xA">
+										<value name="NAME">
+											<block type="array_index_1d" id="nvuEESfONToztgNVQwP[">
+											<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="U@H|QG}0AU5Xx0PWGO)p">
+												<field name="NUM">1</field>
+												</shadow>
+											</value>
+											</block>
+										</value>
+										<next>
+											<block type="output_cout" id="F}iFzdn4]tUs(pN5!J5v">
+											<value name="NAME">
+												<block type="cout_endl" id="8Jpri{8o,23:)QH6D6tl"/>
+											</value>
+											<next>
+												<block type="output_cout" id="wB1d3yf@;-BfU,V}EkI_">
+												<value name="NAME">
+													<block type="array_index_1d" id="NUWD{cWkhSu-0?BW[vdh">
+													<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+													<value name="valinp1">
+														<shadow type="math_number" id="YJ^t(VbJ~`n%Jc`*cH]o">
+														<field name="NUM">2</field>
+														</shadow>
+													</value>
+													</block>
+												</value>
+												<next>
+													<block type="output_cout" id=":Py|?UWl}HG[6{yc7A%F">
+													<value name="NAME">
+														<block type="cout_endl" id="bX!t(O1uuYzR8.b;gsM8"/>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</statement>
+				</block>
+			</next>
+			</block>
+		</next>
+		</block>
+		
+		<label text="Array Element Assignment" web-class="labelArray"></label>
+		
+		<block type="include_iostream" id="7Y02eVW5=4*K@Bq+!DgV">
+		<next>
+			<block type="using_namespace_std" id="u)Auu,QUgA=}w={QKr/_">
+			<next>
+				<block type="main" id="Oxo0G-$2+e)@@?doWM:A">
+				<statement name="NAME">
+					<block type="comment_single" id="C:D2:re[Z5.+p4/HUGM+">
+					<field name="input">Array Declaration and Initialization</field>
+					<next>
+						<block type="array" id="],M$#WSsoxexNA5e;okp">
+						<field name="myArrType">myArrTypeInt</field>
+						<field name="myArr" id="*wa=gr27*%scKPy:wctT">myArray</field>
+						<field name="myArrSize">3</field>
+						<next>
+							<block type="comment_single" id="Ujq}4Y|%mShABB+pvcdn">
+							<field name="input">Initialize myArray using array elements blocks</field>
+							<next>
+								<block type="array_index_1d_init" id="~$MiKMFAG{p;{QMq9QE.">
+								<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+								<value name="valinp1">
+									<shadow type="math_number" id="Cg2~6xAR@iw|j/jt8z+8">
+									<field name="NUM">0</field>
+									</shadow>
+								</value>
+								<value name="valinp2">
+									<block type="var_initialization" id="_mg55z6jo^Vbrb8=Stml">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">5</field>
+									</block>
+								</value>
+								<next>
+									<block type="array_index_1d_init" id="{B;;MK9tF}oj+{$N/T!=">
+									<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+									<value name="valinp1">
+										<shadow type="math_number" id="Q!2Kjdl-KdW,N1UY`xmS">
+										<field name="NUM">1</field>
+										</shadow>
+									</value>
+									<value name="valinp2">
+										<block type="var_initialization" id="K_2iC5!Gb0!OBKR8+L1W">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">10</field>
+										</block>
+									</value>
+									<next>
+										<block type="array_index_1d_init" id="#1eVTaOjm|S7UajWNdPz">
+										<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+										<value name="valinp1">
+											<shadow type="math_number" id=":Q20_:Ha[OHf6v9%#u=8">
+											<field name="NUM">2</field>
+											</shadow>
+										</value>
+										<value name="valinp2">
+											<block type="var_initialization" id="P+3BPTF+%N!z)kGJnd%Y">
+											<field name="myVarType">myVarTypeInt</field>
+											<field name="text1">15</field>
+											</block>
+										</value>
+										<next>
+											<block type="comment_single" id="QRL32-q3@sG6sd,3BS.N">
+											<field name="input">Output myArray elements </field>
+											<next>
+												<block type="output_cout" id="Hi![|oeHL$Kn~F`=0xA">
+												<value name="NAME">
+													<block type="array_index_1d" id="SbELM|(^i8}eB*i^GME}">
+													<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+													<value name="valinp1">
+														<shadow type="math_number" id="6%R;q9WjBvgtEk|b5G?@">
+														<field name="NUM">0</field>
+														</shadow>
+													</value>
+													</block>
+												</value>
+												<next>
+													<block type="output_cout" id="%LkVWdhob,+v0iL);@d;">
+													<value name="NAME">
+														<block type="cout_endl" id="jY8lyP3yBMTB2OKT)/UA"/>
+													</value>
+													<next>
+														<block type="output_cout" id="ZMkfw5Q?@jiHu{e*N%js">
+														<value name="NAME">
+															<block type="array_index_1d" id="[m84]jt7j?WO3/4DsZpv">
+															<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+															<value name="valinp1">
+																<shadow type="math_number" id="C1%NKX@]GRF0[`eNW)^`">
+																<field name="NUM">1</field>
+																</shadow>
+															</value>
+															</block>
+														</value>
+														<next>
+															<block type="output_cout" id="8Z^-hDxp$L`w``!6e^Xg">
+															<value name="NAME">
+																<block type="cout_endl" id="39wm!UF}6%e3R)$ytMer"/>
+															</value>
+															<next>
+																<block type="output_cout" id="*+8r1RF(Y;tL,aa[F!e9">
+																<value name="NAME">
+																	<block type="array_index_1d" id="7gGBF:Ql+h(o$`*{`i(S">
+																	<field name="myArrRef" id="*wa=gr27*%scKPy:wctT">myArray</field>
+																	<value name="valinp1">
+																		<shadow type="math_number" id="C1gifx6LK!#D=pW-zhCK">
+																		<field name="NUM">2</field>
+																		</shadow>
+																	</value>
+																	</block>
+																</value>
+																<next>
+																	<block type="output_cout" id="%BIv69mm,2c!Zsl%#W0=">
+																	<value name="NAME">
+																		<block type="cout_endl" id="[?w{z_MsT7%IH6h;AC_U"/>
+																	</value>
+																	</block>
+																</next>
+																</block>
+															</next>
+															</block>
+														</next>
+														</block>
+													</next>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</statement>
+				</block>
+			</next>
+			</block>
+		</next>
+		</block>
+
+		
+		<label text="2D Array Declaration" web-class="labelArray"></label>
+		
+		<block type="include_iostream" id="_x!(V/q](VL)dRG2M6q9">
+		<next>
+			<block type="using_namespace_std" id="Lj+M4iNUh=k4HkUM)M7}">
+			<next>
+				<block type="main" id="%;f=_{WAoi#f{).[sk[f">
+				<statement name="NAME">
+					<block type="comment_single" id="#2yYC|,o_q?ZtS;*,!$|">
+					<field name="input">2D Array Declaration and Initialization</field>
+					<next>
+						<block type="array_2d" id="9tsGX;p8ZC$oj-.3^+Lb">
+						<field name="myArrType">myArrTypeInt</field>
+						<field name="myArr" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+						<field name="myVarY">3</field>
+						<field name="myVarX">3</field>
+						<statement name="state_val1">
+							<block type="array_init_literal_2d" id="XQ$pK,I#=%+(;Ma%VHaK">
+							<value name="valinp1">
+								<shadow type="array_init_literal" id="YC0D[ZYgne_2[yF*91e|">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1"/>
+								</shadow>
+								<block type="array_init_literal" id="!ozGxTcH,gZ*@ULwc/Ql">
+								<field name="myVarType">myVarTypeInt</field>
+								<field name="text1">5</field>
+								<value name="valinp1">
+									<block type="array_init_literal" id="|OUR1uD:N[gEqZnTqMR*">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">10</field>
+									<value name="valinp1">
+										<block type="array_init_literal" id="^{3J*xs5g/Qs7Jx{loO(">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">15</field>
+										</block>
+									</value>
+									</block>
+								</value>
+								</block>
+							</value>
+							<next>
+								<block type="array_init_literal_2d" id="LJ,}j%v@RAI*I`H_$1`Q">
+								<value name="valinp1">
+									<shadow type="array_init_literal" id="4w-PusX~b2-3S#duZD_+">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1"/>
+									</shadow>
+									<block type="array_init_literal" id="H;0U}$aNZmDZ**@Y+JY)">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">20</field>
+									<value name="valinp1">
+										<block type="array_init_literal" id="v]ys}PsDfl;F~7zkCYb9">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">25</field>
+										<value name="valinp1">
+											<block type="array_init_literal" id="c9(?9.dbc{%I8fuHiXnd">
+											<field name="myVarType">myVarTypeInt</field>
+											<field name="text1">30</field>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="array_init_literal_2d" id="[tHf3+2OCN~,bt+@rMX+">
+									<value name="valinp1">
+										<shadow type="array_init_literal" id="=}z5wWKN1UBjG5d:YU*}">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1"/>
+										</shadow>
+										<block type="array_init_literal" id="FX-%`LzWp!20*C#=x?P;">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">35</field>
+										<value name="valinp1">
+											<block type="array_init_literal" id="FWI$~@Zn[ym(~|M8iq?O">
+											<field name="myVarType">myVarTypeInt</field>
+											<field name="text1">40</field>
+											<value name="valinp1">
+												<block type="array_init_literal" id="1W+qU4A))TuYK_le.]u+">
+												<field name="myVarType">myVarTypeInt</field>
+												<field name="text1">45</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</statement>
+				</block>
+			</next>
+			</block>
+		</next>
+		</block>
+		
+		<label text="2D Array Elements" web-class="labelArray"></label>
+		
+		  <block type="include_iostream" id="_x!(V/q](VL)dRG2M6q9">
+			<next>
+				<block type="using_namespace_std" id="Lj+M4iNUh=k4HkUM)M7}">
+				<next>
+					<block type="main" id="%;f=_{WAoi#f{).[sk[f">
+					<statement name="NAME">
+						<block type="comment_single" id="#2yYC|,o_q?ZtS;*,!$|">
+						<field name="input">2D Array Declaration and Initialization</field>
+						<next>
+							<block type="array_2d" id="9tsGX;p8ZC$oj-.3^+Lb">
+							<field name="myArrType">myArrTypeInt</field>
+							<field name="myArr" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+							<field name="myVarY">2</field>
+							<field name="myVarX">3</field>
+							<statement name="state_val1">
+								<block type="array_init_literal_2d" id="XQ$pK,I#=%+(;Ma%VHaK">
+								<value name="valinp1">
+									<shadow type="array_init_literal" id="YC0D[ZYgne_2[yF*91e|">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1"/>
+									</shadow>
+									<block type="array_init_literal" id="!ozGxTcH,gZ*@ULwc/Ql">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="text1">4</field>
+									<value name="valinp1">
+										<block type="array_init_literal" id="|OUR1uD:N[gEqZnTqMR*">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">8</field>
+										<value name="valinp1">
+											<block type="array_init_literal" id="^{3J*xs5g/Qs7Jx{loO(">
+											<field name="myVarType">myVarTypeInt</field>
+											<field name="text1">12</field>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="array_init_literal_2d" id="LJ,}j%v@RAI*I`H_$1`Q">
+									<value name="valinp1">
+										<shadow type="array_init_literal" id="4w-PusX~b2-3S#duZD_+">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1"/>
+										</shadow>
+										<block type="array_init_literal" id="H;0U}$aNZmDZ**@Y+JY)">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">16</field>
+										<value name="valinp1">
+											<block type="array_init_literal" id="v]ys}PsDfl;F~7zkCYb9">
+											<field name="myVarType">myVarTypeInt</field>
+											<field name="text1">20</field>
+											<value name="valinp1">
+												<block type="array_init_literal" id="c9(?9.dbc{%I8fuHiXnd">
+												<field name="myVarType">myVarTypeInt</field>
+												<field name="text1">24</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</next>
+								</block>
+							</statement>
+							<next>
+								<block type="comment_single" id="8@6ZZOT]!@w3g$_P{8z[">
+								<field name="input">sum to add all the values in myArray2D</field>
+								<next>
+									<block type="variable_declare" id="zP~,1rg1ghPRgO0CP]hu">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="myVarDec" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+									<value name="NAME">
+										<block type="var_initialization" id=":dp]U5UIsQd@Dnq?jL=l">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">0</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id=":zyaF6C`xJDUL48nwMw4">
+										<field name="input">Iterate through myArray2D using 2 loops</field>
+										<next>
+											<block type="loop_for" id="Y]vKMoa~zTJ?2Y6sQuiG">
+											<field name="myLoopVarType">myLoopVarInt</field>
+											<field name="myLoopVar1" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopVar2" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopVarComp">LESSER</field>
+											<field name="myLoopVar3" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopCh">myLoopInc</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="r,j@)DU7ni_XXlm`!!I,">
+												<field name="NUM">0</field>
+												</shadow>
+											</value>
+											<value name="valinp2">
+												<shadow type="math_number" id="F*a/$C8Ca{5OWHw,J[,[">
+												<field name="NUM">2</field>
+												</shadow>
+											</value>
+											<statement name="stateinp1">
+												<block type="loop_for" id="FC=R:h}bPip:pV/)^zug">
+												<field name="myLoopVarType">myLoopVarInt</field>
+												<field name="myLoopVar1" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopVar2" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopVarComp">LESSER</field>
+												<field name="myLoopVar3" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopCh">myLoopInc</field>
+												<value name="valinp1">
+													<shadow type="math_number" id="@3tPF?@pp!B|wl[MLm~0">
+													<field name="NUM">0</field>
+													</shadow>
+												</value>
+												<value name="valinp2">
+													<shadow type="math_number" id="d+9T{CLpnA+8-*Oed5Di">
+													<field name="NUM">3</field>
+													</shadow>
+												</value>
+												<statement name="stateinp1">
+													<block type="var_change" id="A{DNO_6fF`!gp^bzdkNq">
+													<field name="myVarDef" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+													<value name="valinp1">
+														<shadow type="math_number" id="5u)@Er`{%dvHDJ^1(-T,">
+														<field name="NUM">1</field>
+														</shadow>
+														<block type="array_index_2d" id="*fmXTQF$N[tpFpvFd//i">
+														<field name="myArrRef" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+														<value name="valinp1">
+															<shadow type="math_number" id="]79.yNkGi3by?I[^6Xly">
+															<field name="NUM">0</field>
+															</shadow>
+															<block type="variables_get" id="/yb9ErWkyJqp0*x%j3uM">
+															<field name="VAR" id="y^!:xiKEE%mk-w8svndY">i</field>
+															</block>
+														</value>
+														<value name="valinp2">
+															<shadow type="math_number" id="bbL6bxNeNbyOcBd!!R/[">
+															<field name="NUM">0</field>
+															</shadow>
+															<block type="variables_get" id="Mm:Ky=theDMhrsFED;pF">
+															<field name="VAR" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</statement>
+												</block>
+											</statement>
+											<next>
+												<block type="comment_single" id="fIkfy33X[e|ej#Y^Y.x=">
+												<field name="input">Output the sum of myArray2D</field>
+												<next>
+													<block type="output_cout" id="q.BsIp~/0[g([=FUJQ.s">
+													<value name="NAME">
+														<block type="cout_output" id="j!G_{palkm3E$x%v:yz)">
+														<field name="inp">The sum of the 2D array is </field>
+														<value name="NAME">
+															<block type="cout_var" id="@ypN.bz?XO|ioUc^Zpu[">
+															<field name="varDef" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+															<value name="valinp1">
+																<block type="cout_endl" id="p0a;o}RnKQJ{.oc^unW~"/>
+															</value>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+		
+		<label text="2D Array Element Assignment" web-class="labelArray"></label>
+		
+		  <block type="include_iostream" id="_x!(V/q](VL)dRG2M6q9">
+			<next>
+				<block type="using_namespace_std" id="Lj+M4iNUh=k4HkUM)M7}">
+				<next>
+					<block type="main" id="%;f=_{WAoi#f{).[sk[f">
+					<statement name="NAME">
+						<block type="comment_single" id="#2yYC|,o_q?ZtS;*,!$|">
+						<field name="input">2D Array Declaration </field>
+						<next>
+							<block type="array_2d" id="9tsGX;p8ZC$oj-.3^+Lb">
+							<field name="myArrType">myArrTypeInt</field>
+							<field name="myArr" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+							<field name="myVarY">2</field>
+							<field name="myVarX">3</field>
+							<next>
+								<block type="comment_single" id="tm(%l=!*Ew^YwL!14RL~">
+								<field name="input">sum to add all the values in myArray2D</field>
+								<next>
+									<block type="variable_declare" id="Iat_(=R06r_ax/|*B(JT">
+									<field name="myVarType">myVarTypeInt</field>
+									<field name="myVarDec" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+									<value name="NAME">
+										<block type="var_initialization" id="(vK))Z]LqmbM+u7}yM#V">
+										<field name="myVarType">myVarTypeInt</field>
+										<field name="text1">0</field>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id=":zyaF6C`xJDUL48nwMw4">
+										<field name="input">Iterate through myArray2D using 2 loops</field>
+										<next>
+											<block type="loop_for" id="Y]vKMoa~zTJ?2Y6sQuiG">
+											<field name="myLoopVarType">myLoopVarInt</field>
+											<field name="myLoopVar1" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopVar2" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopVarComp">LESSER</field>
+											<field name="myLoopVar3" id="y^!:xiKEE%mk-w8svndY">i</field>
+											<field name="myLoopCh">myLoopInc</field>
+											<value name="valinp1">
+												<shadow type="math_number" id="r,j@)DU7ni_XXlm`!!I,">
+												<field name="NUM">0</field>
+												</shadow>
+											</value>
+											<value name="valinp2">
+												<shadow type="math_number" id="F*a/$C8Ca{5OWHw,J[,[">
+												<field name="NUM">2</field>
+												</shadow>
+											</value>
+											<statement name="stateinp1">
+												<block type="loop_for" id="FC=R:h}bPip:pV/)^zug">
+												<field name="myLoopVarType">myLoopVarInt</field>
+												<field name="myLoopVar1" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopVar2" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopVarComp">LESSER</field>
+												<field name="myLoopVar3" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+												<field name="myLoopCh">myLoopInc</field>
+												<value name="valinp1">
+													<shadow type="math_number" id="@3tPF?@pp!B|wl[MLm~0">
+													<field name="NUM">0</field>
+													</shadow>
+												</value>
+												<value name="valinp2">
+													<shadow type="math_number" id="d+9T{CLpnA+8-*Oed5Di">
+													<field name="NUM">3</field>
+													</shadow>
+												</value>
+												<statement name="stateinp1">
+													<block type="array_index_2d_init" id="iL`U0$M=*Bf.(|)t]cl]">
+													<field name="myArrRef" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+													<value name="valinp1">
+														<shadow type="math_number" id="+!ioN$2~=B[ZGj4CYLWd">
+														<field name="NUM">0</field>
+														</shadow>
+														<block type="variables_get" id="YLESNPsAm7-*QULTRz8g">
+														<field name="VAR" id="y^!:xiKEE%mk-w8svndY">i</field>
+														</block>
+													</value>
+													<value name="valinp2">
+														<shadow type="math_number" id="cD3e;v/*F!L/j3kuTu}!">
+														<field name="NUM">0</field>
+														</shadow>
+														<block type="variables_get" id=":9w7|6O_3}IT($jh]U!K">
+														<field name="VAR" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+														</block>
+													</value>
+													<value name="valinp3">
+														<block type="math_arith" id="F!Txhe,Q/*|*0p~7`Wwt">
+														<field name="arith_op">math_add</field>
+														<field name="math_parenth">parenthNo</field>
+														<value name="valinp1">
+															<shadow type="math_number" id="}ei{?678]/RpdRS@B$KF">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="variables_get" id="Q,zulTGO(Zd-@1vhif4,">
+															<field name="VAR" id="y^!:xiKEE%mk-w8svndY">i</field>
+															</block>
+														</value>
+														<value name="valinp2">
+															<shadow type="math_number" id="49W752^PL`C@vKEA;YRK">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="variables_get" id="Ujy=MdiJ9J*C5w]F;y6f">
+															<field name="VAR" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+															</block>
+														</value>
+														</block>
+													</value>
+													<next>
+														<block type="var_change" id="ud)W$_+u;;)Nh5hFb}9o">
+														<field name="myVarDef" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+														<value name="valinp1">
+															<shadow type="math_number" id="wOev0Plc9P5WzLhL5w//">
+															<field name="NUM">1</field>
+															</shadow>
+															<block type="array_index_2d" id=",0JifQSI[xuMeOQlG.@C">
+															<field name="myArrRef" id="fcqyYz7f7t@0C(eVeK*w">myArray2D</field>
+															<value name="valinp1">
+																<shadow type="math_number" id="JSUoZZn7h|_|9evZ;Bc+">
+																<field name="NUM">0</field>
+																</shadow>
+																<block type="variables_get" id="Sa%`WOETXKL9zf*ShA]_">
+																<field name="VAR" id="y^!:xiKEE%mk-w8svndY">i</field>
+																</block>
+															</value>
+															<value name="valinp2">
+																<shadow type="math_number" id="|6@04:(/l{,`)l4ShuN_">
+																<field name="NUM">0</field>
+																</shadow>
+																<block type="variables_get" id="Hq0/mZ79:xoPxy/aiHtV">
+																<field name="VAR" id="N29Z(Qd`hsn_Ik}3rsF1">j</field>
+																</block>
+															</value>
+															</block>
+														</value>
+														</block>
+													</next>
+													</block>
+												</statement>
+												</block>
+											</statement>
+											<next>
+												<block type="comment_single" id="fIkfy33X[e|ej#Y^Y.x=">
+												<field name="input">Output the sum of myArray2D</field>
+												<next>
+													<block type="output_cout" id="q.BsIp~/0[g([=FUJQ.s">
+													<value name="NAME">
+														<block type="cout_output" id="j!G_{palkm3E$x%v:yz)">
+														<field name="inp">The sum of the 2D array is </field>
+														<value name="NAME">
+															<block type="cout_var" id="@ypN.bz?XO|ioUc^Zpu[">
+															<field name="varDef" id="nWAH{uH[pBr)HIKt9f$]">sum</field>
+															<value name="valinp1">
+																<block type="cout_endl" id="p0a;o}RnKQJ{.oc^unW~"/>
+															</value>
+															</block>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</next>
+						</block>
+					</statement>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+		
+		</category>
+		
+		<category name="Vectors Examples" colour = "#5B93A5">
+		
+		<label text="Vector Declaration and Initialization" web-class="labelVector"></label>
+		
+		<block type="include_iostream" id="3^F1pSt?Eiu)x]TcVeXz">
+			<next>
+				<block type="include_string" id="MzsO3{HH#/NFD]3Pwmpk">
+				<next>
+					<block type="include_vector" id="g(PW_#C:2o5@:7Y*:@^H">
+					<next>
+						<block type="main" id="(T29s`.)SJG:d|z:DAMG">
+						<statement name="NAME">
+							<block type="vector" id="V%Z`RzhuqVBG1Qzdku+K">
+							<field name="myVecType">myVecTypeString</field>
+							<field name="myVecDef" id="~M;zn_{[wP/H5hqO/7Rm">myVec</field>
+							<value name="valinp1">
+								<block type="vec_init" id="^WTta07}1R;?1a2nT9;@">
+								<field name="myVarType">myVarTypeString</field>
+								<field name="text1">125</field>
+								</block>
+							</value>
+							<next>
+								<block type="output_cout" id="9.{hv0HEHWJGy|,Z~Ucd">
+								<value name="NAME">
+									<block type="vectoratposition" id="19DW`@$DR`sByK$WW*Fr">
+									<field name="myVecVar" id="~M;zn_{[wP/H5hqO/7Rm">myVec</field>
+									<value name="NAME">
+										<shadow type="math_number" id="LjtpXKaNSYj${/?M)0]x">
+										<field name="NUM">0</field>
+										</shadow>
+									</value>
+									</block>
+								</value>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+		</block>
+		
+		
+		<label text="Adding to a vector" web-class="labelVector"></label>
+		
+		  <block type="include_iostream" id="$US^4+06/BI=h1|fDc7~">
+			<next>
+				<block type="include_vector" id="y)HXHM/O%$g]:n#bB+92">
+				<next>
+					<block type="using_namespace_std" id="+_E2^xzEEF%A~=cuy!Rg">
+					<next>
+						<block type="main" id=";n;}uY#LlP1LOwIY1WLK">
+						<statement name="NAME">
+							<block type="comment_single" id="(UVn;_nP.VgK+7n-H4jK">
+							<field name="input">Declare vector type boolean</field>
+							<next>
+								<block type="vector" id="%!##/Tas(!@+xn=!~v[b">
+								<field name="myVecType">myVecTypeBool</field>
+								<field name="myVecDef" id="G-BoD}?Jk=wrRhvHF;`u">myVec</field>
+								<next>
+									<block type="comment_single" id=",:p!aB~?_p{bD8L[~!J~">
+									<field name="input">add 2 vector elements (push_back)</field>
+									<next>
+										<block type="vectorpushback" id="!+)Qrw%E$QaSD)r^{z*W">
+										<field name="myVecVar" id="G-BoD}?Jk=wrRhvHF;`u">myVec</field>
+										<value name="NAME">
+											<block type="var_initialization" id="OkF2XZKpc9ehCyIe5b4H">
+											<field name="myVarType">myVarTypeBool</field>
+											<field name="text1">false</field>
+											</block>
+										</value>
+										<next>
+											<block type="vectorpushback" id="LlchZCJ.MW#;r^!w3Fp5">
+											<field name="myVecVar" id="G-BoD}?Jk=wrRhvHF;`u">myVec</field>
+											<value name="NAME">
+												<block type="var_initialization" id="#4@oQhu(i)#Kz*PQ4c^n">
+												<field name="myVarType">myVarTypeBool</field>
+												<field name="text1">true</field>
+												</block>
+											</value>
+											<next>
+												<block type="comment_single" id="VO,$#3_%mMPpYjCIPWy%">
+												<field name="input">output the second element of the vector (true)</field>
+												<next>
+													<block type="output_cout" id="~{z}/F3,.Hf{.0`l!u@k">
+													<value name="NAME">
+														<block type="vectoratposition" id="VE7zYFw729T;K$ivKdsa">
+														<field name="myVecVar" id="G-BoD}?Jk=wrRhvHF;`u">myVec</field>
+														<value name="NAME">
+															<shadow type="math_number" id="faH,@v43vqN$^KNvXMyB">
+															<field name="NUM">1</field>
+															</shadow>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+
+		
+		<label text="Check if a vector is empty" web-class="labelVector"></label>
+		
+			<block type="include_iostream" id="Yr;4FI7M.@;jc{_w#]2}">
+			<next>
+				<block type="include_string" id="qUB%rDgw]lCz6eJ;|jHR">
+				<next>
+					<block type="include_vector" id="c%GWdWju_Q#Nsa^Jyup2">
+					<next>
+						<block type="using_namespace_std" id="^})p6*lT2nEtWaZU9NNI">
+						<next>
+							<block type="main" id="ky13?;lMtKn_.hOrvlKx">
+							<statement name="NAME">
+								<block type="comment_single" id="FC=t:b7}jrr#f4MS4e}q">
+								<field name="input">declare a vector, and initialize it with two elements</field>
+								<next>
+									<block type="vector" id="|lTr[;gmu8{j0x-On[5A">
+									<field name="myVecType">myVecTypeString</field>
+									<field name="myVecDef" id="~M;zn_{[wP/H5hqO/7Rm">myVec</field>
+									<value name="valinp1">
+										<block type="vec_init" id="#4NJfGD!5-bgpF6l5:PJ">
+										<field name="myVarType">myVarTypeString</field>
+										<field name="text1">Hello, </field>
+										<value name="valinp1">
+											<block type="vec_init" id="(1{J20+IxAs+IoDVhsy`">
+											<field name="myVarType">myVarTypeString</field>
+											<field name="text1">World!</field>
+											</block>
+										</value>
+										</block>
+									</value>
+									<next>
+										<block type="comment_single" id="@i}`Px:~!Jnp0Q`b4Qnj">
+										<field name="input">if statements to check if myVec has any elements</field>
+										<next>
+											<block type="controls_if" id="h/D9Yy90/zuE!V+c@D9Z">
+											<value name="IF0">
+												<block type="vectorempty" id="F,I/[LGcjJ`7[NZl@.CZ">
+												<field name="NAME" id="~M;zn_{[wP/H5hqO/7Rm">myVec</field>
+												</block>
+											</value>
+											<statement name="DO0">
+												<block type="comment_single" id="yoS[6EqakM]TRDdL|%i:">
+												<field name="input">if myVec has no elements</field>
+												<next>
+													<block type="output_cout" id="!TQs^JG@jmTk@)Frecz}">
+													<value name="NAME">
+														<block type="cout_output" id="1_;Mvm37s2iP(U)?M76:">
+														<field name="inp">myVec does not have any elements!</field>
+														<value name="NAME">
+															<block type="cout_endl" id="u8@wgY11$V72q1LHssbt"/>
+														</value>
+														</block>
+													</value>
+													</block>
+												</next>
+												</block>
+											</statement>
+											<next>
+												<block type="controls_if" id="}.3M5u;6aN{cd8=e,l?%">
+												<value name="IF0">
+													<block type="logic_negate" id="l79*fY{:Mq3m1s)ggiZ;">
+													<value name="BOOL">
+														<block type="vectorempty" id="iZbN5%obLZ4+!|M`*X;y">
+														<field name="NAME" id="~M;zn_{[wP/H5hqO/7Rm">myVec</field>
+														</block>
+													</value>
+													</block>
+												</value>
+												<statement name="DO0">
+													<block type="comment_single" id="m-0_$-[p0Gylc6j*9ztf">
+													<field name="input">if myVec has elements in it</field>
+													<next>
+														<block type="output_cout" id="!m[;@KW:#ai1`eXkiADv">
+														<value name="NAME">
+															<block type="cout_output" id="TU$8CwHHEnImpJzaY9{b">
+															<field name="inp">myVec has at least one element!</field>
+															<value name="NAME">
+																<block type="cout_endl" id="d5O%52SGeijsQg1:|*)."/>
+															</value>
+															</block>
+														</value>
+														</block>
+													</next>
+													</block>
+												</statement>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</statement>
+							</block>
+						</next>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+  
+  
+		<label text="Resizing a vector" web-class="labelVector"></label>
+  
+			<block type="include_iostream" id="Cz3kI;E1h+6s}?h%?|j_">
+			<next>
+				<block type="include_vector" id="fM^R@_!8A5e:aJUNBlP7">
+				<next>
+					<block type="using_namespace_std" id=")Vq}5w7QS*-?H_Y.iBvN">
+					<next>
+						<block type="main" id="0dQ@LXuWeF!t0=E0/4|L">
+						<statement name="NAME">
+							<block type="comment_single" id="_}b?Vp);Bm^6|x/]Camx">
+							<field name="input">declare myVec and initialize it with 4 elements</field>
+							<next>
+								<block type="vector" id="si(^|N8.RIsVVyh*0c{E">
+								<field name="myVecType">myVecTypeChar</field>
+								<field name="myVecDef" id="Yy5p[n+Od(2b|fTY84Q/">myVec</field>
+								<value name="valinp1">
+									<block type="vec_init" id="S/jar_Gdet}/}9vKkH)~">
+									<field name="myVarType">myVarTypeChar</field>
+									<field name="text1">a</field>
+									<value name="valinp1">
+										<block type="vec_init" id="^CTxlqk9H]3Zip.=[9cs">
+										<field name="myVarType">myVarTypeChar</field>
+										<field name="text1">b</field>
+										<value name="valinp1">
+											<block type="vec_init" id="xoiZD_Ok$:%rXuB]T6nk">
+											<field name="myVarType">myVarTypeChar</field>
+											<field name="text1">c</field>
+											<value name="valinp1">
+												<block type="vec_init" id="Jj9[Io$AEb.{tcB+iPV7">
+												<field name="myVarType">myVarTypeChar</field>
+												<field name="text1">d</field>
+												</block>
+											</value>
+											</block>
+										</value>
+										</block>
+									</value>
+									</block>
+								</value>
+								<next>
+									<block type="comment_single" id="kwL:|*JbPwUwVyGl%*(~">
+									<field name="input">resize myVec to have 0 elements</field>
+									<next>
+										<block type="vector_resize" id="x1$DHS}j{|[1wjyZt?{h">
+										<field name="myVecDef" id="Yy5p[n+Od(2b|fTY84Q/">myVec</field>
+										<value name="valinp1">
+											<shadow type="math_number" id="FtXB|On^NxZxMS@nxz!|">
+											<field name="NUM">0</field>
+											</shadow>
+										</value>
+										<next>
+											<block type="comment_single" id=":{sOgxAE~DSuKomdMD5m">
+											<field name="input">if statements to check if myVec has any elements</field>
+											<next>
+												<block type="controls_if" id="P]0Babh]swNc8Jnc^=n]">
+												<value name="IF0">
+													<block type="vectorempty" id="D?bNJC+dYtSyr=bu*IsY">
+													<field name="NAME" id="Yy5p[n+Od(2b|fTY84Q/">myVec</field>
+													</block>
+												</value>
+												<statement name="DO0">
+													<block type="comment_single" id="dsa)_uvtsE[_9A{GDP0a">
+													<field name="input">if myVec has no elements</field>
+													<next>
+														<block type="output_cout" id="yrfvgrN5qZF$lESi|cwB">
+														<value name="NAME">
+															<block type="cout_output" id="Uf:IQ3POpHUf_i%jcdZ~">
+															<field name="inp">myVec does not have any elements!</field>
+															<value name="NAME">
+																<block type="cout_endl" id="o#~*=y^S8;9vKDLIGyy7"/>
+															</value>
+															</block>
+														</value>
+														</block>
+													</next>
+													</block>
+												</statement>
+												<next>
+													<block type="controls_if" id="XXOD=7gf:jIvEg_#z+u1">
+													<value name="IF0">
+														<block type="logic_negate" id="Rg#+Gahpxg`Qm*fOK=qS">
+														<value name="BOOL">
+															<block type="vectorempty" id=",n1t,m!~Ccj1ba54$b(2">
+															<field name="NAME" id="Yy5p[n+Od(2b|fTY84Q/">myVec</field>
+															</block>
+														</value>
+														</block>
+													</value>
+													<statement name="DO0">
+														<block type="comment_single" id="2f{Eb4bK~25}b`%/B1@s">
+														<field name="input">if myVec has elements in it</field>
+														<next>
+															<block type="output_cout" id="B|oY~Y;OW480DKGn]QtI">
+															<value name="NAME">
+																<block type="cout_output" id="3#{toK)USunLp++!M5k4">
+																<field name="inp">myVec has at least one element!</field>
+																<value name="NAME">
+																	<block type="cout_endl" id="rHAT^B4VlMHZs6NH?s!m"/>
+																</value>
+																</block>
+															</value>
+															</block>
+														</next>
+														</block>
+													</statement>
+													</block>
+												</next>
+												</block>
+											</next>
+											</block>
+										</next>
+										</block>
+									</next>
+									</block>
+								</next>
+								</block>
+							</next>
+							</block>
+						</statement>
+						</block>
+					</next>
+					</block>
+				</next>
+				</block>
+			</next>
+			</block>
+  
+  
+		</category>
+		
+		
+		
+	</category>
+	
+	

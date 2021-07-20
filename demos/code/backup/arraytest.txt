@@ -1,0 +1,148 @@
+
+Blockly.Blocks['array_1D'] = {
+	init: function(){
+
+		this.appendValueInput("valinp0")
+			.setCheck(null)
+			.appendField(new Blockly.FieldDropdown([["int","INT"], ["size_t","SIZE_T"], ["double","DOUBLE"], ["char","CHAR"], ["string","STRING"], ["bool","BOOL"]]), "myArrType")
+			.appendField(new Blockly.FieldTextInput("myArr"), "myArrDef")
+			.appendField('[')
+		
+		this.appendDummyInput()
+			.appendField(']')
+			.appendField('', 'init');
+
+		this.appendStatementInput('stateinp0')
+			.setCheck(null)
+			.appendField();
+
+		this.setInputsInline(true);
+
+		this.setPreviousStatement(true);
+		this.setNextStatement(true);
+		this.setColour(arrayHUE);
+		this.setTooltip('');
+
+		this.typeName_ = "";
+		this.getVar_ = "";
+		
+		this.isInitialized = false;
+
+		//size of the array
+		this.size_ = 0;
+		//how many valueinputs there rae
+		this.arrCount_ = 0;
+		this.tempArrCount_ = 1;
+		this.allocatedSize_ = 0;
+
+		//variable to check the number of dimensions
+		this.dimensions_ = 1;
+
+		//set data structure as an array
+		this.setDataStr("isArr", true);
+	},
+
+	onchange: function(){
+
+		//this.setFieldValue(' = { ', 'init');
+
+		this.allocateBlock();
+		this.allocateValues();
+		this.allocateWarnings();
+	},
+	/**
+	 * Change the get_num block to align to the logic of arrays
+	 */
+	allocateBlock: function(){
+		let block = this.inputList[0].connection.targetConnection;
+
+		if(block && block.sourceBlock_.type === "get_num"){
+			block.sourceBlock_.getField('NUM').setPrecision(1);
+			block.sourceBlock_.getField('NUM').setMin(0);
+			block.sourceBlock_.getField('NUM').setMax(12);
+		}
+	},
+
+	allocateValues: function(){
+		this.typeName_ = (typeConv(this.getField('myArrType').getText()));
+		this.getVar_ = this.getField('myArrDef').getText();
+
+		this.size_ = parseInt( Blockly.C.valueToCode( this, 'valinp0', Blockly.C.ORDER_NONE ));
+			
+		if(this.allocatedSize_ !== this.size_){
+			this.allocateInputs();
+		}
+
+		this.arrCount_ = this.size_;
+		
+	},
+
+	allocateInputs: function(){
+		let connection = this.getInput('stateinp0').connection;
+
+		if( this.allocatedSize_ < this.size_ ){
+			while( ( this.allocatedSize_ - 1 ) < this.size_ ){
+				var add = this.workspace.newBlock('array_1D_initialization');
+				
+				add.setMovable(false);
+				add.setDeletable(false);
+
+				add.setFieldValue( this.allocatedSize_.toString() ,'init');
+
+				add.initSvg();
+
+				connection.connect(add.previousConnection);
+				connection = add.nextConnection;
+
+				this.allocatedSize_++;
+			}
+
+		}
+
+		else {
+			while( this.allocatedSize_ > this.size_ ){
+
+				let block = this.inputList[2].connection.targetConnection;
+				var i = 0;
+				while(block){
+					console.log(block.sourceBlock_);
+					
+					block = block.sourceBlock_.nextConnection;
+
+					i++;
+					
+					if(i > 2){
+						break;
+					}
+				}
+
+				this.allocatedSize_--;
+			}
+
+
+
+		}
+
+		this.allocatedSize_ = this.size_;
+
+	},
+
+	allocateWarnings: function(){
+		var TT = "";
+
+		{
+			if(!this.size_ > 0 ){
+
+			}
+		}
+
+		if(TT.length > 0){
+			this.setWarningText(TT);
+		}
+		else {
+			this.setWarningText(null);
+		}
+
+	}
+
+};

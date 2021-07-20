@@ -1,0 +1,202 @@
+Blockly.Blocks['printf_mutator'] = {
+	init: function(){
+
+		this.appendDummyInput()
+			.appendField('printf');
+
+		this.appendStatementInput('STACK')
+			.setCheck(null);
+		
+		this.setPreviousStatement(false);
+		this.setNextStatement(false);
+		
+		this.setColour(stringHUE);
+		this.setTooltip('');
+		
+	},
+	
+	onchange: function(){
+		
+	}
+};
+
+
+//Block to add a string literal
+Blockly.Blocks['printf_add'] = {
+	init: function(){
+		
+		this.appendDummyInput('duminp1')
+			.appendField('add');
+		
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		
+		this.setInputsInline(true);
+		
+		this.setColour(stringHUE);
+		this.setTooltip('');
+		
+	},
+	
+	allocateFormat: function(){
+		
+		switch(this.typeName_){
+			
+			case 'Int':
+			case 'Bool':
+				this.typeNameFormat_ = "%d";
+			break;
+			
+			case 'Size_t':
+				this.typeNameFormat_ = "%u";
+			break;
+			
+			case 'Double':
+				this.typeNameFormat_ = "%f";
+			break;
+			
+			case 'Char':
+				this.typeNameFormat_ = "%c";
+			break;
+			
+			case 'String':
+				this.typeNameFormat_ = "%s";
+			break;
+			
+			case 'Short':
+				this.typeNameFormat_ = "%i";
+			break
+			
+			case 'Long':
+				this.typeNameFormat_ = "%ld";
+			break;
+			
+			case 'Long long':
+				this.typeNameFormat_ = "%lld";
+			break;
+			
+		}
+		
+	}
+};
+
+//TODO: save data for variable dropdown
+Blockly.Blocks['printf'] = {
+	init: function() {
+		this.appendDummyInput()
+			.appendField('printf("');
+			
+
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(stringHUE);
+		this.setTooltip("A standard string output.\nRequires - <iostream> or <string>\nNote - Printf is used primarily as a simple string output.");
+		this.setHelpUrl("http://www.cplusplus.com/reference/cstdio/printf/");
+		this.setInputsInline(true);
+		
+		this.stringCount_ = 0;
+		
+		//Array for mutator blocks string
+		this.textList_ = [];
+		//String for this.textList_
+		this.textString_ = "";
+		
+		this.paramNames_ = [""];
+		this.paramNamesSave_ = [""];
+		this.paramTypesFormat_ = [""];
+		this.paramTypes_ = [""];
+		
+		//set the mutator
+		this.setMutator(new Blockly.Mutator(['printf_add']));
+	},
+
+	mutationToDom: function(){
+		if(!this.stringCount_){
+			return null;
+		}
+
+		var container = document.createElement('mutation');
+
+		if(this.size_){
+			container.setAttribute('stringadd', this.size_);
+		}
+
+		return container;
+	},
+
+	domToMutation: function(xmlElement){
+		this.stringCount_ = parseInt(xmlElement.getAttribute('stringadd'), 10);
+
+		for(var i = 1; i <= this.stringCount_; ++i){
+			this.appendDummyInput('duminp' + i)
+			.appendField( i.toString() )
+			.appendField( '', 'init' );
+		}
+	},
+
+	decompose: function(workspace){
+		var containerBlock = workspace.newBlock('printf_mutator');
+
+		containerBlock.initSvg();
+
+		var connection = containerBlock.getInput('STACK').connection;
+
+		for(var i = 1; i <= this.stringCount_; ++i){
+			add = workspace.newBlock('printf_add');
+			add.initSvg();
+
+			connection.connect(add.previousConnection);
+			connection = add.nextConnection;
+		}
+		
+		return containerBlock;
+	},
+
+	compose: function(containerBlock){
+		for(var i = this.stringCount_; i > 0; --i){
+			this.removeInput('duminp' + i);
+		}
+
+		this.stringCount_ = 0;
+
+		var clauseBlock = containerBlock.getInputTargetBlock('STACK');
+
+		while(clauseBlock){
+			switch(clauseBlock.type){
+				case 'printf_add':
+
+				this.stringCount_++;
+
+				var stringInput = this.appendDummyInput('duminp' + this.stringCount_)
+					.appendField( this.stringCount_.toString() )
+					.appendField( '', 'init' );
+
+				if(clauseBlock.valueConnection_){
+					stringInput.connection.connect(clauseBlock.valueConnection_);
+				}
+
+				break;
+
+				default:
+					throw 'Unknown block type.';
+			}
+			clauseBlock = clauseBlock.nextConnection
+			&& clauseBlock.nextConnection.targetBlock();
+		}
+	},
+
+	onchange: function(){
+
+	}
+
+
+
+};
+
+Blockly.C['printf'] = function(block) {
+	var code = "";
+	
+	code += ');\n';
+	
+	return code;
+};

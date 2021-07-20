@@ -1,0 +1,228 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="include_iostream" id="5^JH~Ge%Pl)*%)6-oQI?" x="138" y="113">
+    <next>
+      <block type="using_namespace_std" id="JJIhFKDBbrX.CwY)JEY#">
+        <next>
+          <block type="user_function" id="/^)Xvmh$(aN!^K`}O+M@">
+            <field name="const"/>
+            <field name="myFuncReturn">int</field>
+            <field name="myFuncVar">FindMax</field>
+            <value name="valinp1">
+              <block type="func_parameters" id="+uta`{,u`hpB6g;.$XYs">
+                <field name="const"/>
+                <field name="type">int</field>
+                <field name="var">a</field>
+                <value name="valinp1">
+                  <block type="func_parameters" id="NqVOi)N,(|n8g|3STw_:">
+                    <field name="const"/>
+                    <field name="type">int</field>
+                    <field name="var">b</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="stateinp1">
+              <block type="variable_declare" id="YSb3Dq^G8%|=W=B,e5{i">
+                <field name="const"/>
+                <field name="type">int</field>
+                <field name="myVarDec">m</field>
+                <next>
+                  <block type="var_reinit" id="Nb+6TsiwRWXw{|SYrc)`">
+                    <value name="valinp1">
+                      <shadow type="get_var" id="UIJ?J$7{hN|#gP6+=ovQ">
+                        <field name="VAR">m</field>
+                      </shadow>
+                    </value>
+                    <value name="valinp2">
+                      <block type="get_num" id="}6OMtmEDOb6)rX/$UzFA">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="if_statement" id="={,fm3#r:xIU}S[?8]}*">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" elseifadd = "0" else="1"></mutation>
+                        <value name="valinp0">
+                          <block type="logic_comparison" id="IU~+J3)KW$gTs-IXK|*k">
+                            <field name="dropdown1">&gt;</field>
+                            <field name="parenthesisOptions"/>
+                            <value name="valinp1">
+                              <block type="get_var" id="]Oq_R7$lmyRp}Hj3!IVp">
+                                <field name="VAR">a</field>
+                              </block>
+                            </value>
+                            <value name="valinp2">
+                              <block type="get_var" id="y|z,F;i}W.JI6qGDLVku">
+                                <field name="VAR">b</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="stateinp0">
+                          <block type="var_reinit" id="KB@ppF5+C[o%!dE^L.|g">
+                            <value name="valinp1">
+                              <shadow type="get_var" id="i4r5*12Boh2sd8WziJD!">
+                                <field name="VAR">m</field>
+                              </shadow>
+                            </value>
+                            <value name="valinp2">
+                              <block type="get_var" id="Va.YH/JGd/eJHpcs}Fp;">
+                                <field name="VAR">a</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="else">
+                          <block type="var_reinit" id="qXAX/wynCW01hx!+K^P#">
+                            <value name="valinp1">
+                              <shadow type="get_var" id="e2t;4_5;dOv^mUnWDQQ8">
+                                <field name="VAR">m</field>
+                              </shadow>
+                            </value>
+                            <value name="valinp2">
+                              <block type="get_var" id="|S+=w*G515tQ+G{JiZ3Y">
+                                <field name="VAR">b</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="func_return" id="uTc0(LxycMJG@Tfl~Ux!">
+                            <value name="valinp1">
+                              <block type="get_var" id="#bZ?76w?:{.~!tM3O::;">
+                                <field name="VAR">m</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="main" id="`hm9@om:a14g$+U}m$Ir">
+                <statement name="NAME">
+                  <block type="variable_declare" id="s!m2BOQ!9(hbD~-7ul9e">
+                    <field name="const"/>
+                    <field name="type">int</field>
+                    <field name="myVarDec">x</field>
+                    <next>
+                      <block type="variable_declare" id="7i1j#nf9ffz8$,[*~/K`">
+                        <field name="const"/>
+                        <field name="type">int</field>
+                        <field name="myVarDec">y</field>
+                        <next>
+                          <block type="variable_declare" id="QtwHl@P1[et($@-}Ob^}">
+                            <field name="const"/>
+                            <field name="type">int</field>
+                            <field name="myVarDec">z</field>
+                            <next>
+                              <block type="var_reinit" id="@gPw%/A8888]dL3$S0cY">
+                                <value name="valinp1">
+                                  <shadow type="get_var" id="bT0DuS?#jHHi2@_Q8Ors">
+                                    <field name="VAR">x</field>
+                                  </shadow>
+                                </value>
+                                <value name="valinp2">
+                                  <block type="get_num" id="+pS0k#FzOkYdQS-*Bx=|">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="var_reinit" id="Ex9Iq#W4xEyN2q}`Te6$">
+                                    <value name="valinp1">
+                                      <shadow type="get_var" id="F[Onemu;-=i2z8Zu%SLd">
+                                        <field name="VAR">y</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="valinp2">
+                                      <block type="get_num" id="aoJ]0~W]5g5OkaHJNL}8">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="var_reinit" id="$Uq5HU!{aQ-*YQ$Rg,BC">
+                                        <value name="valinp1">
+                                          <shadow type="get_var" id="[Vg}2+w5I8^C1m|O)j7X">
+                                            <field name="VAR">z</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="valinp2">
+                                          <block type="get_num" id="A{u]QYuwpTy*v~Or/h]I">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="cin_input" id="|P^y4bj8:uf1V3)BsAG^">
+                                            <value name="valinp0">
+                                              <block type="get_var" id=",:9n6x[S/HW9TN@U}S@r">
+                                                <field name="VAR">x</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="cin_input" id="|v$p`tG$Co[0RmX{L!5!">
+                                                <value name="valinp0">
+                                                  <block type="get_var" id="dgS[N=Nt=,ukiwOV.4}p">
+                                                    <field name="VAR">y</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="var_reinit" id="jjw(#R4Fhku^@of[A-?-">
+                                                    <value name="valinp1">
+                                                      <shadow type="get_var" id=":EI8!!%yBkq=f%xXH[J,">
+                                                        <field name="VAR">z</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="valinp2">
+                                                      <block type="get_func" id="jB%nGI[Dlqo|kSrHSSGg">
+                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" param_add="2"></mutation>
+                                                        <field name="funcVar">FindMax</field>
+                                                        <value name="valinp1">
+                                                          <block type="get_var" id="3d#fHK27-w#28J!i(rak">
+                                                            <field name="VAR">x</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="valinp2">
+                                                          <block type="get_var" id="`Y^R:-naV*Zo,?D/v+Oe">
+                                                            <field name="VAR">y</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="cout" id="fHZ#$9.6|niXQQ)bP/=m">
+                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" printadd="1"></mutation>
+                                                        <value name="valinp0">
+                                                          <block type="get_var" id="Cn~b!a/M-/u=6OEtdL7i">
+                                                            <field name="VAR">z</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

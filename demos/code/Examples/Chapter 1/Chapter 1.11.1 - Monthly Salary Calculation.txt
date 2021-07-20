@@ -1,0 +1,151 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="include_iostream" id="p}G)Dz.Dsl:uMazai`k^" x="288" y="163">
+    <next>
+      <block type="using_namespace_std" id="bxBw^?@8mzm2qqUzdYjj">
+        <next>
+          <block type="main" id="cUxIML+Q;gVVxi#gh.CX">
+            <statement name="NAME">
+              <block type="variable_declare" id="CLXrl_6x:9{:bsY7H|Up">
+                <field name="const"/>
+                <field name="type">int</field>
+                <field name="myVarDec">hourlyWage</field>
+                <next>
+                  <block type="var_reinit" id="B,u]QjN-#W(nvXi9o!vR">
+                    <value name="valinp1">
+                      <shadow type="get_var" id="zj{~[0t)#bkz`+dkXR5j">
+                        <field name="VAR">hourlyWage</field>
+                      </shadow>
+                    </value>
+                    <value name="valinp2">
+                      <block type="get_num" id="%B4yF*IA~:IBl@p%H79{">
+                        <field name="NUM">20</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="cout" id="XV[=mJ*I;c|nc@v*HIvz">
+                        <comment pinned="false" h="80" w="160">Annual calculation</comment>
+                        <value name="valinp0">
+                          <block type="var_initialization" id="`ZvP}h:bV]7@X]]sK-O6">
+                            <field name="type">string</field>
+                            <field name="text1">Annual salary is: </field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="cout" id="hDj4~!n+T4[U_|?k;f*,">
+                            <value name="valinp0">
+                              <block type="math_arith" id="g5AO!^jRM:kO,OhsnXKT">
+                                <field name="arith_op">math_mul</field>
+                                <field name="parenthesis"/>
+                                <value name="valinp1">
+                                  <shadow xmlns="" type="get_num">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="get_var" id="*{J%,,a~rhIQg}+EE]E)">
+                                    <field name="VAR">hourlyWage</field>
+                                  </block>
+                                </value>
+                                <value name="valinp2">
+                                  <shadow xmlns="" type="get_num">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arith" id="p4HaEz9xae!RdoqI/rUv">
+                                    <field name="arith_op">math_mul</field>
+                                    <field name="parenthesis"/>
+                                    <value name="valinp1">
+                                      <shadow type="get_num" id="c$2(r(^hw_XJ=W-A?$dh">
+                                        <field name="NUM">40</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="valinp2">
+                                      <shadow type="get_num" id=":veE8GaqrzK-0#evgP7n">
+                                        <field name="NUM">50</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="cout" id="jOUK_=%KMt3Ieg_E^0h4">
+                                <next>
+                                  <block type="cout" id="!A9UGv$V+A(pOug]$XG]">
+                                    <comment pinned="false" h="80" w="160">Monthly calculation</comment>
+                                    <value name="valinp0">
+                                      <block type="var_initialization" id=".)K8$jQsuEex8r-n`w.t">
+                                        <field name="type">string</field>
+                                        <field name="text1">Monthly salary is: </field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="cout" id="wvrfSfv/=JoKG`uW=(K*">
+                                        <value name="valinp0">
+                                          <block type="math_arith" id="V_W~)i=?c3)v~~#DtQ.(">
+                                            <field name="arith_op">math_div</field>
+                                            <field name="parenthesis">()</field>
+                                            <comment pinned="false" h="80" w="160">Change the 1 so the statement outputs monthly salary.</comment>
+                                            <value name="valinp1">
+                                              <shadow xmlns="" type="get_num">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arith" id="As,,v_;=B~9dEB`Vrz`4">
+                                                <field name="arith_op">math_mul</field>
+                                                <field name="parenthesis">()</field>
+                                                <value name="valinp1">
+                                                  <shadow xmlns="" type="get_num">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="get_var" id="{o3ZJ}0*Z/GI`yMk!|03">
+                                                    <field name="VAR">hourlyWage</field>
+                                                  </block>
+                                                </value>
+                                                <value name="valinp2">
+                                                  <shadow xmlns="" type="get_num">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="math_arith" id="31KJaoUqVUkTWc}lIM4G">
+                                                    <field name="arith_op">math_mul</field>
+                                                    <field name="parenthesis"/>
+                                                    <value name="valinp1">
+                                                      <shadow type="get_num" id=".sWw#L8sI+C@!qS/Bce`">
+                                                        <field name="NUM">40</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="valinp2">
+                                                      <shadow type="get_num" id="XF_3N~ne_d-f=py+m1|a">
+                                                        <field name="NUM">50</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="valinp2">
+                                              <shadow type="get_num" id="wU}Zgx(h@_u_35)2JSHV">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="cout" id="3RCNaJgRGc,:M(76VqVL"/>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
